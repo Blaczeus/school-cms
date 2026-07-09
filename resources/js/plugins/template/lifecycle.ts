@@ -6,6 +6,7 @@ import { createCursorPlugin } from './plugins/cursor';
 import { createMenuPlugin } from './plugins/menu';
 import { createPreloaderPlugin } from './plugins/preloader';
 import { createScrollPlugin } from './plugins/scroll';
+import { createStickyHeaderPlugin } from './plugins/sticky-header';
 import { createUtilitiesPlugin } from './plugins/utilities';
 
 export type TemplateLifecycleContext = {
@@ -22,6 +23,7 @@ const foundationPlugins: TemplateLifecyclePlugin[] = [
     createPreloaderPlugin(),
     createCursorPlugin(),
     createMenuPlugin(),
+    createStickyHeaderPlugin(),
     createBackToTopPlugin(),
     createScrollPlugin(),
 ];

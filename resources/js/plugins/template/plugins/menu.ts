@@ -56,9 +56,9 @@ export function createMenuPlugin(): TemplateLifecyclePlugin {
 
             $('.header-search-icon')
                 .off(`click${namespace}`)
-                .on(`click${namespace}`, () => {
+                .on(`click${namespace}`, function (this: Element) {
                     $('.rs-stickys-form').slideToggle('show');
-                    $('.header-search-icon').toggleClass('icon-close');
+                    $(this).toggleClass('icon-close');
                 });
 
             $('.onepage-menu li a')
@@ -86,6 +86,10 @@ export function createMenuPlugin(): TemplateLifecyclePlugin {
                 $('.body-overlay').off(namespace);
                 $('.header-search-icon').off(namespace);
                 $('.onepage-menu li a').off(namespace);
+                $('.offcanvas-area').removeClass('info-open opened');
+                $('.offcanvas-overlay').removeClass('overlay-open');
+                $('.body-overlay').removeClass('opened');
+                $('.header-search-icon').removeClass('icon-close');
                 $('.mobile-menu').find('.mean-bar').remove();
             }) satisfies Cleanup;
         },

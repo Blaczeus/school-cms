@@ -24,9 +24,23 @@ export function loadScript(src: string): Promise<void> {
         script.async = false;
         script.defer = true;
         script.dataset.templateScript = src;
-        script.addEventListener('load', () => resolve(), { once: true });
-        script.addEventListener('error', () => reject(new Error(`Failed to load ${src}`)), { once: true });
-        document.body.appendChild(script);
+        script.addEventListener(
+            'load',
+            () => {
+                resolve();
+            },
+            { once: true },
+        );
+
+        script.addEventListener(
+            'error',
+            () => {
+                loadedScripts.delete(src);
+                reject(new Error(`Failed to load ${src}`));
+            },
+            { once: true },
+        );
+        document.head.appendChild(script);
     });
 
     loadedScripts.set(src, promise);

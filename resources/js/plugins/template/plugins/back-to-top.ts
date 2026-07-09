@@ -2,9 +2,16 @@ import { listen } from '../helpers/events';
 import type { Cleanup } from '../helpers/events';
 import type { TemplateLifecyclePlugin } from '../lifecycle';
 
+type JQueryGlobal = (selector: string) => {
+    animate: (properties: Record<string, number>, duration: number) => void;
+    fadeIn: () => void;
+    fadeOut: () => void;
+};
+
 function updateBackToTop(): void {
     const wrapper = document.getElementById('backtotop-wrap');
     const progressCircle = document.querySelector<SVGCircleElement>('.progress-circle');
+    const $ = (window as Window & { jQuery?: JQueryGlobal }).jQuery;
 
     if (!wrapper) {
         return;
@@ -21,13 +28,22 @@ function updateBackToTop(): void {
 
     if (scrollTop > 150) {
         wrapper.classList.add('active-progress');
-        wrapper.style.display = '';
+
+        if ($) {
+            $('#backtotop-wrap').fadeIn();
+        } else {
+            wrapper.style.display = '';
+        }
     } else {
         wrapper.classList.remove('active-progress');
-        wrapper.style.display = 'none';
+
+        if ($) {
+            $('#backtotop-wrap').fadeOut();
+        } else {
+            wrapper.style.display = 'none';
+        }
     }
 
-    document.getElementById('rs-sticky-header')?.classList.toggle('active', scrollTop > 200);
 }
 
 export function createBackToTopPlugin(): TemplateLifecyclePlugin {
@@ -43,6 +59,14 @@ export function createBackToTopPlugin(): TemplateLifecyclePlugin {
             if (wrapper) {
                 cleanups.push(
                     listen(wrapper, 'click', () => {
+                        const $ = (window as Window & { jQuery?: JQueryGlobal }).jQuery;
+
+                        if ($) {
+                            $('html,body').animate({ scrollTop: 0 }, 500);
+
+                            return;
+                        }
+
                         window.scrollTo({ behavior: 'smooth', top: 0 });
                     }),
                 );

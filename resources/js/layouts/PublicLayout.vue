@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { router } from '@inertiajs/vue3';
-import { onBeforeUnmount, onMounted } from 'vue';
+import { nextTick, onBeforeUnmount, onMounted } from 'vue';
 import PublicBackToTop from '@/components/public/PublicBackToTop.vue';
 import PublicCursor from '@/components/public/PublicCursor.vue';
 import PublicPreloader from '@/components/public/PublicPreloader.vue';
@@ -25,7 +25,8 @@ withDefaults(
     },
 );
 
-const removeInertiaFinishListener = router.on('finish', () => {
+const removeInertiaFinishListener = router.on('finish', async () => {
+    await nextTick();
     void reinitializeTemplateLifecycle();
 });
 
