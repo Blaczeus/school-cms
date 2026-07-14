@@ -5,6 +5,7 @@ import {
     loadTemplateMediaWidgetScripts,
     loadTemplatePageWidgetScripts,
 } from './bootstrap';
+import { setDataAttributeStyles } from './helpers/dom';
 import { cleanupAll } from './helpers/events';
 import type { Cleanup } from './helpers/events';
 import { createAnimationPlugin } from './plugins/animations';
@@ -59,11 +60,13 @@ export async function initializeTemplateLifecycle(root: ParentNode = document): 
     }
 
     await loadTemplateFoundationScripts();
+    cleanupTemplateLifecycle();
+    setDataAttributeStyles(root);
+
     await loadTemplatePageWidgetScripts();
     await loadTemplateAnimationScripts();
     await loadTemplateMediaWidgetScripts();
     await loadTemplateFormWidgetScripts();
-    cleanupTemplateLifecycle();
 
     activeCleanups = [];
 

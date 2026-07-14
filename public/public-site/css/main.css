@@ -13824,7 +13824,7 @@ html.lenis body {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .rs-cta-one .rs-cta-bg-thumb::before {
   position: absolute;

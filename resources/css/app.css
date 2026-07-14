@@ -170,3 +170,8 @@
         @apply bg-background text-foreground;
     }
 }
+
+body.public-template-active .rs-banner-four .rs-banner-logo img,
+body.public-template-active .loader .loader-icon img {
+    display: inline-block;
+}
