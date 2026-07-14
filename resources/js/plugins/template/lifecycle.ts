@@ -1,12 +1,26 @@
-import { loadTemplateFoundationScripts } from './bootstrap';
+import {
+    loadTemplateAnimationScripts,
+    loadTemplateFoundationScripts,
+    loadTemplateFormWidgetScripts,
+    loadTemplateMediaWidgetScripts,
+    loadTemplatePageWidgetScripts,
+} from './bootstrap';
 import { cleanupAll } from './helpers/events';
 import type { Cleanup } from './helpers/events';
+import { createAnimationPlugin } from './plugins/animations';
 import { createBackToTopPlugin } from './plugins/back-to-top';
+import { createCounterPlugin } from './plugins/counter';
 import { createCursorPlugin } from './plugins/cursor';
+import { createFormWidgetsPlugin } from './plugins/forms';
+import { createIsotopePlugin } from './plugins/isotope';
+import { createJarallaxPlugin } from './plugins/jarallax';
+import { createMagnificPlugin } from './plugins/magnific';
 import { createMenuPlugin } from './plugins/menu';
 import { createPreloaderPlugin } from './plugins/preloader';
 import { createScrollPlugin } from './plugins/scroll';
+import { createSharedBehaviorsPlugin } from './plugins/shared-behaviors';
 import { createStickyHeaderPlugin } from './plugins/sticky-header';
+import { createSwiperPlugin } from './plugins/swiper';
 import { createUtilitiesPlugin } from './plugins/utilities';
 
 export type TemplateLifecycleContext = {
@@ -15,7 +29,7 @@ export type TemplateLifecycleContext = {
 
 export type TemplateLifecyclePlugin = {
     name: string;
-    init: (context: TemplateLifecycleContext) => Cleanup | void;
+    init: (context: TemplateLifecycleContext) => Cleanup | Promise<Cleanup | void> | void;
 };
 
 const foundationPlugins: TemplateLifecyclePlugin[] = [
@@ -26,6 +40,14 @@ const foundationPlugins: TemplateLifecyclePlugin[] = [
     createStickyHeaderPlugin(),
     createBackToTopPlugin(),
     createScrollPlugin(),
+    createSharedBehaviorsPlugin(),
+    createSwiperPlugin(),
+    createAnimationPlugin(),
+    createMagnificPlugin(),
+    createJarallaxPlugin(),
+    createIsotopePlugin(),
+    createCounterPlugin(),
+    createFormWidgetsPlugin(),
 ];
 
 let activeCleanups: Cleanup[] = [];
@@ -37,11 +59,21 @@ export async function initializeTemplateLifecycle(root: ParentNode = document): 
     }
 
     await loadTemplateFoundationScripts();
+    await loadTemplatePageWidgetScripts();
+    await loadTemplateAnimationScripts();
+    await loadTemplateMediaWidgetScripts();
+    await loadTemplateFormWidgetScripts();
     cleanupTemplateLifecycle();
 
-    activeCleanups = foundationPlugins
-        .map((plugin) => plugin.init({ root }))
-        .filter((cleanup): cleanup is Cleanup => typeof cleanup === 'function');
+    activeCleanups = [];
+
+    for (const plugin of foundationPlugins) {
+        const cleanup = await plugin.init({ root });
+
+        if (typeof cleanup === 'function') {
+            activeCleanups.push(cleanup);
+        }
+    }
 
     initialized = true;
 }
