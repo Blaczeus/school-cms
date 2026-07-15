@@ -1,4 +1,23 @@
-﻿<template>
+<script setup lang="ts">
+import { Link } from '@inertiajs/vue3';
+import { computed } from 'vue';
+import { newsArticles } from '@/data/news';
+import type { NewsArticle } from '@/types/news';
+
+const props = withDefaults(
+    defineProps<{
+        articles?: NewsArticle[];
+    }>(),
+    {
+        articles: () => newsArticles,
+    },
+);
+
+const homeNewsArticles = computed(() => props.articles.slice(0, 3));
+const animationDelays = ['.3s', '.5s', '.7s'];
+</script>
+
+<template>
         <!-- blog area start -->
         <section class="rs-blog-area section-space rs-blog-two secondary-bg">
             <div class="container">
@@ -22,7 +41,7 @@
                     </div>
                     <div class="col-xl-5 col-lg-5">
                         <div class="rs-event-btn d-flex justify-content-lg-end">
-                            <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="blog.html">
+                            <Link class="rs-btn has-icon has-theme-red radius-15 hover-black" href="/news">
                                 <span class="btn-text-wrap">
                            <span class="text-default">View All Post</span>
                                 <span class="text-hover">View All Post</span>
@@ -46,93 +65,43 @@
                               </path>
                            </svg>
                         </span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="rs-blog-wrapper">
-                            <div class="rs-blog-item wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
+                            <div
+                                v-for="(article, index) in homeNewsArticles"
+                                :key="article.slug"
+                                class="rs-blog-item wow fadeInUp"
+                                :data-wow-delay="animationDelays[index]"
+                                data-wow-duration="1s"
+                            >
                                 <div class="rs-blog-thumb">
-                                    <a href="blog-details.html">
-                                        <img src="/public-site/images/blog/blog-thumb-01.webp" alt="image">
-                                    </a>
+                                    <Link :href="`/news/${article.slug}`">
+                                        <img :src="article.image" :alt="article.category ?? article.title">
+                                    </Link>
                                 </div>
                                 <div class="rs-blog-content">
                                     <div class="rs-blog-meta">
-                                        <span class="rs-blog-meta-item">
-                                 <i class="ri-price-tag-3-line"></i>Research
+                                        <span v-if="article.category" class="rs-blog-meta-item">
+                                 <i class="ri-price-tag-3-line"></i>{{ article.category }}
                               </span>
                                         <span class="rs-blog-meta-item">
-                                 <i class="ri-calendar-line"></i>December 9, 2025
-                              </span>
-                                    </div>
-                                    <h5 class="rs-blog-title">
-                                        <a href="blog-details.html">Univet Scholars Making Remarkable Research</a>
-                                    </h5>
-                                    <div class=" rs-blog-meta-author">
-                                        <div class="rs-blog-meta-author-thumb">
-                                            <img src="/public-site/images/user/user-thumb-01.webp" alt="image">
-                                        </div>
-                                        <div class="rs-blog-meta-author-content">
-                                            <a href="#"> Nayeem</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rs-blog-item wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1s">
-                                <div class="rs-blog-thumb">
-                                    <a href="blog-details.html">
-                                        <img src="/public-site/images/blog/blog-thumb-02.webp" alt="image">
-                                    </a>
-                                </div>
-                                <div class="rs-blog-content">
-                                    <div class="rs-blog-meta">
-                                        <span class="rs-blog-meta-item">
-                                 <i class="ri-price-tag-3-line"></i>Education
-                              </span>
-                                        <span class="rs-blog-meta-item">
-                                 <i class="ri-calendar-line"></i>December 9, 2025
+                                 <i class="ri-calendar-line"></i>{{ article.publishedAt }}
                               </span>
                                     </div>
                                     <h5 class="rs-blog-title">
-                                        <a href="blog-details.html">Advancing Knowledge Through Student Research</a>
+                                        <Link :href="`/news/${article.slug}`">{{ article.title }}</Link>
                                     </h5>
                                     <div class=" rs-blog-meta-author">
-                                        <div class="rs-blog-meta-author-thumb">
-                                            <img src="/public-site/images/user/user-thumb-02.webp" alt="image">
+                                        <div v-if="article.authorImage" class="rs-blog-meta-author-thumb">
+                                            <img :src="article.authorImage" :alt="article.author ?? 'Author'">
                                         </div>
-                                        <div class="rs-blog-meta-author-content">
-                                            <a href="#"> Anntte </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rs-blog-item wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">
-                                <div class="rs-blog-thumb">
-                                    <a href="blog-details.html">
-                                        <img src="/public-site/images/blog/blog-thumb-03.webp" alt="image">
-                                    </a>
-                                </div>
-                                <div class="rs-blog-content">
-                                    <div class="rs-blog-meta">
-                                        <span class="rs-blog-meta-item">
-                                 <i class="ri-price-tag-3-line"></i>Alumni
-                              </span>
-                                        <span class="rs-blog-meta-item">
-                                 <i class="ri-calendar-line"></i>December 9, 2025
-                              </span>
-                                    </div>
-                                    <h5 class="rs-blog-title">
-                                        <a href="blog-details.html">The Future of Science and Technology on Campus</a>
-                                    </h5>
-                                    <div class=" rs-blog-meta-author">
-                                        <div class="rs-blog-meta-author-thumb">
-                                            <img src="/public-site/images/user/user-thumb-03.webp" alt="image">
-                                        </div>
-                                        <div class="rs-blog-meta-author-content">
-                                            <a href="#"> Hanery Locus </a>
+                                        <div v-if="article.author" class="rs-blog-meta-author-content">
+                                            <a href="javascript:void(0)" aria-disabled="true" @click.prevent> {{ article.author }}</a>
                                         </div>
                                     </div>
                                 </div>
