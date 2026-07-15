@@ -1,4 +1,11 @@
 <script setup lang="ts">
+import { Link } from '@inertiajs/vue3';
+import {
+    footerCampusLinks,
+    footerUsefulLinks,
+    publicInstitution,
+} from '@/data/publicSite';
+
 const props = defineProps<{
     theme: 'blue' | 'red';
 }>();
@@ -19,9 +26,7 @@ const copyrightClass = isRed
 const copyrightLinkClass = isRed
     ? 'rs-footer-copyright-link has-theme-red'
     : 'rs-footer-copyright-link';
-const appBadges = isRed
-    ? ['/public-site/images/icon/icon-04.webp', '/public-site/images/icon/icon-05.webp']
-    : ['/public-site/images/icon/icon-02.webp', '/public-site/images/icon/icon-03.webp'];
+const appBadges: string[] = [];
 </script>
 
 <template>
@@ -36,32 +41,45 @@ const appBadges = isRed
                         <div class="rs-footer-left">
                             <div class="rs-footer-widget footer-1-col-1">
                                 <div class="rs-footer-widget-logo">
-                                    <a href="index.html">
-                                        <img src="/public-site/images/logo/logo-white.webp" alt="logo" />
-                                    </a>
+                                    <Link href="/">
+                                        <img
+                                            src="/public-site/images/logo/logo-white.webp"
+                                            :alt="publicInstitution.name"
+                                        />
+                                    </Link>
                                 </div>
                                 <div class="rs-footer-widget-content">
-                                    <div class="rs-footer-widget-contact-info">
-                                        <div class="rs-footer-content-item">
+                                    <div
+                                        v-if="publicInstitution.phone || publicInstitution.email"
+                                        class="rs-footer-widget-contact-info"
+                                    >
+                                        <div v-if="publicInstitution.phone" class="rs-footer-content-item">
                                             <span>Phone:</span>
-                                            <a href="tel:+990123456789">+990 123 456 789</a>
+                                            <a :href="`tel:${publicInstitution.phone}`">
+                                                {{ publicInstitution.phone }}
+                                            </a>
                                         </div>
-                                        <div class="rs-footer-content-item">
+                                        <div v-if="publicInstitution.email" class="rs-footer-content-item">
                                             <span>Email:</span>
-                                            <a href="mailto:info@univet.edu">info@univet.edu</a>
+                                            <a :href="`mailto:${publicInstitution.email}`">
+                                                {{ publicInstitution.email }}
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="rs-footer-app-badges">
-                                        <a v-for="badge in appBadges" :key="badge" href="#">
+                                    <div v-if="appBadges.length > 0" class="rs-footer-app-badges">
+                                        <a v-for="badge in appBadges" :key="badge" href="javascript:void(0)" aria-disabled="true">
                                             <img :src="badge" alt="App badge" />
                                         </a>
                                     </div>
-                                    <div class="rs-footer-widget-social">
+                                    <div
+                                        v-if="publicInstitution.socials.length > 0"
+                                        class="rs-footer-widget-social"
+                                    >
                                         <span class="rs-footer-social-title">Social Link:</span>
                                         <div :class="socialClass">
-                                            <a href="#"><i class="ri-facebook-fill" /></a>
-                                            <a href="#"><i class="ri-instagram-line" /></a>
-                                            <a href="#"><i class="ri-twitter-x-fill" /></a>
+                                            <a href="javascript:void(0)" aria-disabled="true" @click.prevent><i class="ri-facebook-fill" /></a>
+                                            <a href="javascript:void(0)" aria-disabled="true" @click.prevent><i class="ri-instagram-line" /></a>
+                                            <a href="javascript:void(0)" aria-disabled="true" @click.prevent><i class="ri-twitter-x-fill" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -73,10 +91,11 @@ const appBadges = isRed
                                     <h5 class="rs-footer-widget-title">Our Campus</h5>
                                     <div :class="linkClass">
                                         <ul>
-                                            <li><a href="about.html">About Univet</a></li>
-                                            <li><a href="alumni.html">Alumni Network</a></li>
-                                            <li><a href="libraries.html">Univet Library</a></li>
-                                            <li><a href="campus-life.html">Campus Life</a></li>
+                                            <li v-for="link in footerCampusLinks" :key="link.label">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
+                                                    {{ link.label }}
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -84,10 +103,11 @@ const appBadges = isRed
                                     <h5 class="rs-footer-widget-title">Useful Links</h5>
                                     <div :class="linkClass">
                                         <ul>
-                                            <li><a href="faculty.html">Faculty Areas</a></li>
-                                            <li><a href="program.html">Graduate Programs</a></li>
-                                            <li><a href="event.html">Campus Events</a></li>
-                                            <li><a href="how-to-apply.html">How to Apply</a></li>
+                                            <li v-for="link in footerUsefulLinks" :key="link.label">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
+                                                    {{ link.label }}
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -111,8 +131,8 @@ const appBadges = isRed
                                         <div class="rs-footer-copyright-item">
                                             <div :class="copyrightClass">
                                                 <p class="underline">
-                                                    Copyright © <span id="year">2025</span> Univet.
-                                                    Designed by <a target="_blank" href="https://rstheme.com/">RSTheme.</a>
+                                                    Copyright © <span id="year">2025</span>
+                                                    {{ publicInstitution.name }}. All rights reserved.
                                                 </p>
                                             </div>
                                         </div>
@@ -120,12 +140,16 @@ const appBadges = isRed
                                     <div class="rs-footer-copyright-left">
                                         <div class="rs-footer-copyright-item">
                                             <div :class="copyrightLinkClass">
-                                                <a href="terms-conditions.html">Terms & Agreements</a>
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
+                                                    Terms & Agreements
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="rs-footer-copyright-item">
                                             <div :class="copyrightLinkClass">
-                                                <a href="privacy-policy.html">Privacy policy</a>
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
+                                                    Privacy policy
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { Link } from '@inertiajs/vue3';
+import { publicInstitution } from '@/data/publicSite';
+
 const props = defineProps<{
     theme: 'blue' | 'red';
 }>();
@@ -36,9 +39,9 @@ const galleryImages = [
                 <div class="offcanvas-content">
                     <div class="offcanvas-top d-flex justify-content-between align-items-center mb-20">
                         <div class="offcanvas-logo">
-                            <a :class="logoClass" href="index.html">
-                                <img :src="logo" alt="logo" />
-                            </a>
+                            <Link :class="logoClass" href="/">
+                                <img :src="logo" :alt="publicInstitution.name" />
+                            </Link>
                         </div>
                         <div :class="closeClass">
                             <button class="offcanvas-close-icon animation--flip">
@@ -52,8 +55,7 @@ const galleryImages = [
                     </div>
                     <div class="offcanvas-about mb-30 d-none d-xl-block">
                         <p>
-                            Welcome to Univet University. It was founded in 1966, and Univet University
-                            has grown into one of the leading institutions of higher education.
+                            Welcome to {{ publicInstitution.name }}. {{ publicInstitution.description }}
                         </p>
                     </div>
                     <div class="offcanvas-gallery d-none d-xl-block">
@@ -74,42 +76,49 @@ const galleryImages = [
                             <nav />
                         </div>
                     </div>
-                    <div :class="contactClass">
+                    <div
+                        v-if="publicInstitution.address || publicInstitution.phone || publicInstitution.email"
+                        :class="contactClass"
+                    >
                         <h4 class="offcanvas-title-meta">Contact Info</h4>
                         <ul>
-                            <li class="d-flex gap-15">
+                            <li v-if="publicInstitution.address" class="d-flex gap-15">
                                 <div class="offcanvas-contact-icon">
                                     <i class="ri-map-pin-line" />
                                 </div>
                                 <div class="offcanvas-contact-text">
-                                    <a href="#">374 William S Canning Blvd, Fall River MA Road 2721, USA</a>
+                                    <span>{{ publicInstitution.address }}</span>
                                 </div>
                             </li>
-                            <li class="d-flex gap-15">
+                            <li v-if="publicInstitution.phone" class="d-flex gap-15">
                                 <div class="offcanvas-contact-icon">
                                     <i class="ri-phone-line" />
                                 </div>
                                 <div class="offcanvas-contact-text">
-                                    <a href="tel:+12346691234">+123-4669-1234</a>
+                                    <a :href="`tel:${publicInstitution.phone}`">
+                                        {{ publicInstitution.phone }}
+                                    </a>
                                 </div>
                             </li>
-                            <li class="d-flex gap-15">
+                            <li v-if="publicInstitution.email" class="d-flex gap-15">
                                 <div class="offcanvas-contact-icon">
                                     <i class="ri-mail-line" />
                                 </div>
                                 <div class="offcanvas-contact-text">
-                                    <a href="mailto:univet@gmail.com">univet@gmail.com</a>
+                                    <a :href="`mailto:${publicInstitution.email}`">
+                                        {{ publicInstitution.email }}
+                                    </a>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div :class="socialClass">
+                    <div v-if="publicInstitution.socials.length > 0" :class="socialClass">
                         <h4 class="offcanvas-title-meta">Follow Us</h4>
                         <ul>
-                            <li><a href="#"><i class="ri-facebook-fill" /></a></li>
-                            <li><a href="#"><i class="ri-twitter-x-fill" /></a></li>
-                            <li><a href="#"><i class="ri-youtube-fill" /></a></li>
-                            <li><a href="#"><i class="ri-linkedin-box-fill" /></a></li>
+                            <li><a href="javascript:void(0)" aria-disabled="true" @click.prevent><i class="ri-facebook-fill" /></a></li>
+                            <li><a href="javascript:void(0)" aria-disabled="true" @click.prevent><i class="ri-twitter-x-fill" /></a></li>
+                            <li><a href="javascript:void(0)" aria-disabled="true" @click.prevent><i class="ri-youtube-fill" /></a></li>
+                            <li><a href="javascript:void(0)" aria-disabled="true" @click.prevent><i class="ri-linkedin-box-fill" /></a></li>
                         </ul>
                     </div>
                 </div>

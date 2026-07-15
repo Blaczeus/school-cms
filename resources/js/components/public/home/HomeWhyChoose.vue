@@ -1,4 +1,4 @@
-﻿<template>
+<template>
         <!-- why choose area start -->
         <section class="rs-why-choose-area section-space secondary-bg rs-why-choose-one">
             <div class="rs-why-choose-shape gsap-move up-100">
@@ -19,7 +19,7 @@
                         </svg>
                         Why Choose Us
                      </span>
-                            <h2 class="section-title rs-split-text-enable split-in-left mb-15">Why Choose Univet
+                            <h2 class="section-title rs-split-text-enable split-in-left mb-15">Why Choose Institution Name
                             </h2>
                             <p class="rs-section-desc">Top-ranked programs designed for tomorrowâ€™s leaders
                             </p>
@@ -56,7 +56,7 @@
                                     </svg>
                                 </div>
                                 <h5 class="rs-why-choose-title">Affordability</h5>
-                                <p class="rs-why-choose-desc">Univet provides transparent, competitive tuition fees and flexible
+                                <p class="rs-why-choose-desc">Institution Name provides transparent, competitive tuition fees and flexible
                                     payment options, ensuring
                                     high-quality education.</p>
                             </div>
@@ -68,7 +68,7 @@
                                     </svg>
                                 </div>
                                 <h5 class="rs-why-choose-title">Academics</h5>
-                                <p class="rs-why-choose-desc">At Univet, we offer world-class academic programs, expert faculty
+                                <p class="rs-why-choose-desc">At Institution Name, we offer world-class academic programs, expert faculty
                                     guidance, and innovative learning opportunities.</p>
                             </div>
                             <div class="rs-why-choose-item wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">

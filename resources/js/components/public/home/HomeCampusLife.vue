@@ -1,4 +1,4 @@
-﻿<template>
+<template>
         <!-- campus life area start -->
         <section class="rs-campus-life-area rs-campus-life-three secondary-bg section-space-bottom">
             <div class="rs-campus-life-wrapper">
@@ -24,7 +24,7 @@
                                     </div>
                                     <div class="rs-campus-life-video">
                                         <div class="rs-tween_max_btn-yes gsap-move-no">
-                                            <a href="https://www.youtube.com/watch?v=go7QYaQR494" class="rs-play-btn popup-video is-large has-transparent-btn has-blur hover-red"><i
+                                            <a href="javascript:void(0)" aria-disabled="true" @click.prevent class="rs-play-btn popup-video is-large has-transparent-btn has-blur hover-red"><i
                                        class="ri-play-large-fill"></i></a>
                                         </div>
                                     </div>

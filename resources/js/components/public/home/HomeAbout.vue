@@ -1,4 +1,4 @@
-﻿<template>
+<template>
         <!-- about area start -->
         <section class="rs-about-area section-space rs-about-three secondary-bg">
             <div class="container">
@@ -29,12 +29,12 @@
                                     d="M22.6467 11.9993L24 11.2716L22.6467 10.5222V10.1666C22.6467 10.1666 23.0278 8.23413 20.862 9.24464C20.7517 9.30465 20.6924 9.36542 20.6684 9.42468L11.7367 4.47119L0 11.1884L4.43211 13.2019V12.5485C4.43211 12.5485 8.15079 10.4607 11.9625 10.4607C15.7734 10.4607 19.6092 12.4899 19.6092 12.4899V13.631L22.0563 12.3167V17.6377H21.2416V19.529L22.3248 18.7803L23.5274 19.529V17.637H22.6467V11.9993ZM22.0555 9.83803V10.1944L21.3413 9.79827C21.6017 9.62573 22.0555 9.38642 22.0555 9.83803ZM21.814 11.9251C21.737 11.9279 21.6603 11.9152 21.5883 11.8877C21.5164 11.8602 21.4507 11.8185 21.3952 11.7651C21.3398 11.7117 21.2956 11.6476 21.2655 11.5768C21.2353 11.5059 21.2198 11.4297 21.2197 11.3527C21.2197 11.2757 21.2351 11.1994 21.2652 11.1285C21.2953 11.0576 21.3393 10.9935 21.3947 10.94C21.4501 10.8865 21.5157 10.8447 21.5876 10.8172C21.6595 10.7896 21.7362 10.7768 21.8132 10.7795C21.9615 10.7848 22.102 10.8474 22.2051 10.9542C22.3082 11.0609 22.3659 11.2035 22.366 11.3519C22.3661 11.5003 22.3086 11.643 22.2056 11.7499C22.1027 11.8568 21.9623 11.9196 21.814 11.9251Z">
                                  </path>
                               </svg>
-                              About Red University
+                              About the Institution
                            </span>
                                     <h2 class="section-title rs-split-text-enable split-in-left mb-20">Experience
-                                        the Difference <br> at Univet University</h2>
-                                    <p class="section-desc">Univet University stands beacon excellence in higher education
-                                        founded in 1985. Our mission is to create a community of learners dedicated research
+                                        the Difference <br> at Institution Name</h2>
+                                    <p class="section-desc">Institution Name stands as a place of excellence in higher education.
+                                        Our mission is to create a community of learners dedicated to research,
                                         innovation, exchange programs and opportunities to study abroad.</p>
                                 </div>
                                 <div class="rs-about-feature">
@@ -70,7 +70,7 @@
                                 </div>
                                 <div class="rs-about-info">
                                     <div class="rs-about-btn">
-                                        <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="about.html">
+                                        <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                             <span class="btn-text-wrap">
                                     <span class="text-default">Discover More</span>
                                             <span class="text-hover">Discover More</span>

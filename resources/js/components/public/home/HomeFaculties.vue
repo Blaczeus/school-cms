@@ -1,4 +1,4 @@
-﻿<template>
+<template>
         <!-- team area start -->
         <section class="rs-team-area section-space rs-team-one secondary-bg rs-swiper has-theme-red-two">
             <div class="rs-team-life">
@@ -22,13 +22,13 @@
                         </svg>
                         Our Professors
                      </span>
-                            <h2 class="section-title rs-split-text-enable split-in-left">Univet Professors
+                            <h2 class="section-title rs-split-text-enable split-in-left">Faculty Members
                             </h2>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-5">
                         <div class="rs-event-btn d-flex justify-content-lg-end">
-                            <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="faculty-members.html">
+                            <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                 <span class="btn-text-wrap">
                            <span class="text-default">View All Professors</span>
                                 <span class="text-hover">View All Professors</span>
@@ -69,26 +69,26 @@
                                             <img src="/public-site/images/shape/circle-shape.webp" alt="image">
                                         </div>
                                         <div class="rs-team-thumb">
-                                            <a href="team-details.html"><img src="/public-site/images/team/team-thumb-01.webp" alt="image"></a>
+                                            <a href="javascript:void(0)" aria-disabled="true" @click.prevent><img src="/public-site/images/team/team-thumb-01.webp" alt="image"></a>
                                             <div class="rs-team-social theme-social has-medium has-bg-white has-theme-red">
                                                 <span class="social-icon"><i class="ri-share-line"></i></span>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-facebook-fill"></i>
                                                 </a>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-twitter-x-fill"></i>
                                                 </a>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-instagram-line"></i>
                                                 </a>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-linkedin-fill"></i>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="rs-team-content-wrapper">
                                             <div class="rs-team-content-info">
-                                                <h5 class="rs-team-title underline is-whit"><a href="team-details.html">Savannah
+                                                <h5 class="rs-team-title underline is-whit"><a href="javascript:void(0)" aria-disabled="true" @click.prevent>Savannah
                                                         Nguyen</a>
                                                 </h5>
                                                 <span class="rs-team-designation">Academic Advisor</span>
@@ -105,26 +105,26 @@
                                             <img src="/public-site/images/shape/circle-shape.webp" alt="image">
                                         </div>
                                         <div class="rs-team-thumb">
-                                            <a href="team-details.html"><img src="/public-site/images/team/team-thumb-02.webp" alt="image"></a>
+                                            <a href="javascript:void(0)" aria-disabled="true" @click.prevent><img src="/public-site/images/team/team-thumb-02.webp" alt="image"></a>
                                             <div class="rs-team-social theme-social has-medium has-bg-white has-theme-red">
                                                 <span class="social-icon"><i class="ri-share-line"></i></span>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-facebook-fill"></i>
                                                 </a>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-twitter-x-fill"></i>
                                                 </a>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-instagram-line"></i>
                                                 </a>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-linkedin-fill"></i>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="rs-team-content-wrapper">
                                             <div class="rs-team-content-info">
-                                                <h5 class="rs-team-title underline is-whit"><a href="team-details.html">Kathryn
+                                                <h5 class="rs-team-title underline is-whit"><a href="javascript:void(0)" aria-disabled="true" @click.prevent>Kathryn
                                                         Murphy</a>
                                                 </h5>
                                                 <span class="rs-team-designation">Assistant Teacher</span>
@@ -141,26 +141,26 @@
                                             <img src="/public-site/images/shape/circle-shape.webp" alt="image">
                                         </div>
                                         <div class="rs-team-thumb">
-                                            <a href="team-details.html"><img src="/public-site/images/team/team-thumb-03.webp" alt="image"></a>
+                                            <a href="javascript:void(0)" aria-disabled="true" @click.prevent><img src="/public-site/images/team/team-thumb-03.webp" alt="image"></a>
                                             <div class="rs-team-social theme-social has-medium has-bg-white has-theme-red">
                                                 <span class="social-icon"><i class="ri-share-line"></i></span>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-facebook-fill"></i>
                                                 </a>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-twitter-x-fill"></i>
                                                 </a>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-instagram-line"></i>
                                                 </a>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-linkedin-fill"></i>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="rs-team-content-wrapper">
                                             <div class="rs-team-content-info">
-                                                <h5 class="rs-team-title underline is-whit"><a href="team-details.html">Cameron
+                                                <h5 class="rs-team-title underline is-whit"><a href="javascript:void(0)" aria-disabled="true" @click.prevent>Cameron
                                                         Williamson</a>
                                                 </h5>
                                                 <span class="rs-team-designation">Research Advisor</span>
@@ -177,26 +177,26 @@
                                             <img src="/public-site/images/shape/circle-shape.webp" alt="image">
                                         </div>
                                         <div class="rs-team-thumb">
-                                            <a href="team-details.html"><img src="/public-site/images/team/team-thumb-04.webp" alt="image"></a>
+                                            <a href="javascript:void(0)" aria-disabled="true" @click.prevent><img src="/public-site/images/team/team-thumb-04.webp" alt="image"></a>
                                             <div class="rs-team-social theme-social has-medium has-bg-white has-theme-red">
                                                 <span class="social-icon"><i class="ri-share-line"></i></span>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-facebook-fill"></i>
                                                 </a>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-twitter-x-fill"></i>
                                                 </a>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-instagram-line"></i>
                                                 </a>
-                                                <a href="#" target="_blank">
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                     <i class="ri-linkedin-fill"></i>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="rs-team-content-wrapper">
                                             <div class="rs-team-content-info">
-                                                <h5 class="rs-team-title underline is-whit"><a href="team-details.html">Deli
+                                                <h5 class="rs-team-title underline is-whit"><a href="javascript:void(0)" aria-disabled="true" @click.prevent>Deli
                                                         Yanky</a>
                                                 </h5>
                                                 <span class="rs-team-designation">Sr Teacher</span>

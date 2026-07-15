@@ -1,4 +1,4 @@
-﻿<template>
+<template>
         <!-- banner area start -->
         <section class="rs-banner-area rs-banner-four">
             <div class="rs-banner-video">

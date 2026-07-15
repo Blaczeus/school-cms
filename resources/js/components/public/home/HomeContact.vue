@@ -1,4 +1,4 @@
-﻿<template>
+<template>
         <!-- contact area start -->
         <section class="rs-contact-area section-space-top rs-contact-one has-theme-red">
             <div class="rs-contact-wrapper">
@@ -35,7 +35,7 @@
                                         Application Form
                                     </h5>
                                 </div>
-                                <form id="contact-form" action="https://univet.rstheme.com/html/assets/mailer.php" method="POST">
+                                <form id="contact-form" action="#" method="POST">
                                     <div class="row rs-gutter-24">
                                         <div class="col-md-6">
                                             <div class="rs-contact-input-box">

@@ -1,4 +1,4 @@
-﻿<template>
+<template>
         <!-- program area start -->
         <section class="rs-program-area section-space rs-program-three rs-swiper">
             <div class="rs-program-shape gsap-move up-100">
@@ -32,14 +32,14 @@
                                     <div class="swiper-slide">
                                         <div class="rs-program-item">
                                             <div class="rs-program-thumb">
-                                                <a href="program-details.html"><img src="/public-site/images/program/program-thumb-02.webp" alt="image"></a>
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent><img src="/public-site/images/program/program-thumb-02.webp" alt="image"></a>
                                             </div>
                                             <div class="rs-program-content">
                                                 <div class="rs-program-icon">
                                                     <img src="/public-site/images/icon/icon-07.webp" alt="image">
                                                 </div>
                                                 <div class="rs-program-info">
-                                                    <h5 class="rs-program-title"><a href="program-details.html">B.Sc. in ME</a></h5>
+                                                    <h5 class="rs-program-title"><a href="javascript:void(0)" aria-disabled="true" @click.prevent>B.Sc. in ME</a></h5>
                                                     <p class="rs-program-desc">B.Sc. in Mechanical Engineering provides strong
                                                         theoretical</p>
                                                     <div class="rs-program-feature">
@@ -72,7 +72,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="rs-program-btn">
-                                                        <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="program-details.html">
+                                                        <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                             <span class="btn-text-wrap">
                                                 <span class="text-default">View Program</span>
                                                             <span class="text-hover">View Program</span>
@@ -105,14 +105,14 @@
                                     <div class="swiper-slide">
                                         <div class="rs-program-item">
                                             <div class="rs-program-thumb">
-                                                <a href="program-details.html"><img src="/public-site/images/program/program-thumb-03.webp" alt="image"></a>
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent><img src="/public-site/images/program/program-thumb-03.webp" alt="image"></a>
                                             </div>
                                             <div class="rs-program-content">
                                                 <div class="rs-program-icon">
                                                     <img src="/public-site/images/icon/icon-06.webp" alt="image">
                                                 </div>
                                                 <div class="rs-program-info">
-                                                    <h5 class="rs-program-title"><a href="program-details.html">M.Sc. in CSE</a></h5>
+                                                    <h5 class="rs-program-title"><a href="javascript:void(0)" aria-disabled="true" @click.prevent>M.Sc. in CSE</a></h5>
                                                     <p class="rs-program-desc">Explore advanced knowledge and discovery through guide
                                                         research.</p>
                                                     <div class="rs-program-feature">
@@ -145,7 +145,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="rs-program-btn">
-                                                        <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="program-details.html">
+                                                        <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                             <span class="btn-text-wrap">
                                                 <span class="text-default">View Program</span>
                                                             <span class="text-hover">View Program</span>
@@ -178,14 +178,14 @@
                                     <div class="swiper-slide">
                                         <div class="rs-program-item">
                                             <div class="rs-program-thumb">
-                                                <a href="program-details.html"><img src="/public-site/images/program/program-thumb-04.webp" alt="image"></a>
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent><img src="/public-site/images/program/program-thumb-04.webp" alt="image"></a>
                                             </div>
                                             <div class="rs-program-content">
                                                 <div class="rs-program-icon">
                                                     <img src="/public-site/images/icon/icon-06.webp" alt="image">
                                                 </div>
                                                 <div class="rs-program-info">
-                                                    <h5 class="rs-program-title"><a href="program-details.html">B.Sc. in CSE</a></h5>
+                                                    <h5 class="rs-program-title"><a href="javascript:void(0)" aria-disabled="true" @click.prevent>B.Sc. in CSE</a></h5>
                                                     <p class="rs-program-desc">Explore the world of coding data and innovation with a
                                                         degree.</p>
                                                     <div class="rs-program-feature">
@@ -218,7 +218,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="rs-program-btn">
-                                                        <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="program-details.html">
+                                                        <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                             <span class="btn-text-wrap">
                                                 <span class="text-default">View Program</span>
                                                             <span class="text-hover">View Program</span>
@@ -251,14 +251,14 @@
                                     <div class="swiper-slide">
                                         <div class="rs-program-item">
                                             <div class="rs-program-thumb">
-                                                <a href="program-details.html"><img src="/public-site/images/program/program-thumb-05.webp" alt="image"></a>
+                                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent><img src="/public-site/images/program/program-thumb-05.webp" alt="image"></a>
                                             </div>
                                             <div class="rs-program-content">
                                                 <div class="rs-program-icon">
                                                     <img src="/public-site/images/icon/icon-08.webp" alt="image">
                                                 </div>
                                                 <div class="rs-program-info">
-                                                    <h5 class="rs-program-title"><a href="program-details.html">Master of Laws</a>
+                                                    <h5 class="rs-program-title"><a href="javascript:void(0)" aria-disabled="true" @click.prevent>Master of Laws</a>
                                                     </h5>
                                                     <p class="rs-program-desc">Advance your legal expertise with an internationally
                                                         recognized.</p>
@@ -292,7 +292,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="rs-program-btn">
-                                                        <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="program-details.html">
+                                                        <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                                             <span class="btn-text-wrap">
                                                 <span class="text-default">View Program</span>
                                                             <span class="text-hover">View Program</span>

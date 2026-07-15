@@ -1,4 +1,4 @@
-﻿<template>
+<template>
         <!-- testimonial area start -->
         <section class="rs-testimonial-area rs-testimonial-three section-space rs-swiper">
             <div class="rs-testimonial-shape gsap-move up-100">

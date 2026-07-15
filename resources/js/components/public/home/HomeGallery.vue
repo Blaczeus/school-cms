@@ -1,4 +1,4 @@
-﻿<template>
+<template>
         <!-- gallery area start -->
         <div class="rs-gallery-area rs-gallery-one">
             <div class="container-fluid g-0">
@@ -26,7 +26,7 @@
                                 </div>
                             </div>
                             <div class="rs-gallery-btn">
-                                <a class="rs-btn has-icon has-theme-red hover-black" href="campus-life.html">
+                                <a class="rs-btn has-icon has-theme-red hover-black" href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                     <span class="btn-text-wrap">
                               <span class="text-default">Discover Campus Life</span>
                                     <span class="text-hover">Discover Campus Life</span>

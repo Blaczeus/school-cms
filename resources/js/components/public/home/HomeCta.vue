@@ -1,4 +1,4 @@
-﻿<template>
+<template>
         <!-- cta area start -->
         <section class="rs-cta-area rs-cta-one has-theme-red">
             <div class="rs-cta-bg-thumb include-bg" data-background="/public-site/images/bg/cta-bg-thumb-01.webp"></div>
@@ -19,16 +19,16 @@
                            Interested?
                         </span>
                                 <h2 class="section-title rs-split-text-enable split-in-left mb-20 is-white">Want to Learn
-                                    More About Univet University</h2>
+                                    More About Institution Name</h2>
                                 <p class="section-desc is-white">Discover our programs, research excellence, and the
                                     opportunities that
-                                    make Univet University a destination for ambitious learners. </p>
+                                    make Institution Name a destination for ambitious learners. </p>
                             </div>
                             <div class="rs-cta-btn">
-                                <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="contact.html">
+                                <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                     <span class="btn-text-wrap">
-                              <span class="text-default">Learn More Univet</span>
-                                    <span class="text-hover">Learn More Univet</span>
+                              <span class="text-default">Learn More</span>
+                                    <span class="text-hover">Learn More</span>
                                     </span>
                                     <span class="icon-box has-rotate">
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15">

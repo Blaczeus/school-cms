@@ -1,4 +1,4 @@
-﻿<template>
+<template>
         <!-- feature area start -->
         <div class="rs-feature-area rs-feature-three">
             <div class="container">
@@ -6,7 +6,7 @@
                     <div class="col-xl-12">
                         <div class="rs-feature-wrapper">
                             <div class="rs-feature-item">
-                                <a href="admission-requirements.html">
+                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                     <span class="feature-icon">
                               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                                  <g clip-path="url(#clip0_7976_105)">
@@ -25,7 +25,7 @@
                                 </a>
                             </div>
                             <div class="rs-feature-item is-active">
-                                <a href="program.html">
+                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                     <span class="feature-icon">
                               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24">
                                  <path fill-rule="evenodd" clip-rule="evenodd"
@@ -40,7 +40,7 @@
                                 </a>
                             </div>
                             <div class="rs-feature-item">
-                                <a href="campus-life.html">
+                                <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                     <span class="feature-icon">
                               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                                  <path

@@ -1,4 +1,4 @@
-﻿<template>
+<template>
         <!-- event area start -->
         <section class="rs-event-area section-space-bottom rs-event-one bg-primary has-theme-red">
             <div class="container">
@@ -22,7 +22,7 @@
                     </div>
                     <div class="col-xl-5 col-lg-5">
                         <div class="rs-event-btn d-flex justify-content-lg-end">
-                            <a class="rs-btn has-icon has-theme-red radius-15 hover-white" href="event.html">
+                            <a class="rs-btn has-icon has-theme-red radius-15 hover-white" href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                 <span class="btn-text-wrap">
                            <span class="text-default">View More Event</span>
                                 <span class="text-hover">View More Event</span>
@@ -58,7 +58,7 @@
                                     <img src="/public-site/images/shape/three-line-shape-three.webp" alt="image">
                                 </div>
                                 <div class="rs-event-thumb">
-                                    <a href="event-details.html">
+                                    <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                         <img src="/public-site/images/event/event-thumb-01.webp" alt="image">
                                     </a>
                                 </div>
@@ -72,7 +72,7 @@
                               </span>
                                     </div>
                                     <h5 class="rs-event-title">
-                                        <a href="event-details.html">Academic Excellence & Intellectual Development</a>
+                                        <a href="javascript:void(0)" aria-disabled="true" @click.prevent>Academic Excellence & Intellectual Development</a>
                                     </h5>
                                     <span class="rs-event-meta-item">
                               <i class="ri-map-2-line"></i>MIOT, USA </span>
@@ -83,7 +83,7 @@
                                     <img src="/public-site/images/shape/three-line-shape-three.webp" alt="image">
                                 </div>
                                 <div class="rs-event-thumb">
-                                    <a href="event-details.html">
+                                    <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                         <img src="/public-site/images/event/event-thumb-02.webp" alt="image">
                                     </a>
                                 </div>
@@ -97,7 +97,7 @@
                               </span>
                                     </div>
                                     <h5 class="rs-event-title">
-                                        <a href="event-details.html">Innovative Research & Scientific Advancement</a>
+                                        <a href="javascript:void(0)" aria-disabled="true" @click.prevent>Innovative Research & Scientific Advancement</a>
                                     </h5>
                                     <span class="rs-event-meta-item">
                               <i class="ri-map-2-line"></i>MIOT, USA </span>
@@ -108,7 +108,7 @@
                                     <img src="/public-site/images/shape/three-line-shape-three.webp" alt="image">
                                 </div>
                                 <div class="rs-event-thumb">
-                                    <a href="event-details.html">
+                                    <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                         <img src="/public-site/images/event/event-thumb-03.webp" alt="image">
                                     </a>
                                 </div>
@@ -122,7 +122,7 @@
                               </span>
                                     </div>
                                     <h5 class="rs-event-title">
-                                        <a href="event-details.html">Digital Transformation, Technology & Future</a>
+                                        <a href="javascript:void(0)" aria-disabled="true" @click.prevent>Digital Transformation, Technology & Future</a>
                                     </h5>
                                     <span class="rs-event-meta-item">
                               <i class="ri-map-2-line"></i>MIOT, USA </span>
@@ -133,7 +133,7 @@
                                     <img src="/public-site/images/shape/three-line-shape-three.webp" alt="image">
                                 </div>
                                 <div class="rs-event-thumb">
-                                    <a href="event-details.html">
+                                    <a href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                         <img src="/public-site/images/event/event-thumb-04.webp" alt="image">
                                     </a>
                                 </div>
@@ -147,7 +147,7 @@
                               </span>
                                     </div>
                                     <h5 class="rs-event-title">
-                                        <a href="event-details.html">Future-Ready Skills & Workforce Transformation</a>
+                                        <a href="javascript:void(0)" aria-disabled="true" @click.prevent>Future-Ready Skills & Workforce Transformation</a>
                                     </h5>
                                     <span class="rs-event-meta-item">
                               <i class="ri-map-2-line"></i>MIOT, USA </span>

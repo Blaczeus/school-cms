@@ -1,4 +1,4 @@
-﻿<template>
+<template>
         <!-- tuition area start -->
         <section class="rs-tuition-area section-space rs-tuition-one secondary-bg">
             <div class="rs-tuition-shape-one">
@@ -24,12 +24,12 @@
                               </svg>
                               Tuition Fee
                            </span>
-                                    <h2 class="section-title rs-split-text-enable split-in-left mb-20">Tuition Fee Univet</h2>
-                                    <p class="section-desc">Univet offers transparent, affordable tuition fees with flexible
+                                    <h2 class="section-title rs-split-text-enable split-in-left mb-20">Tuition and Fees</h2>
+                                    <p class="section-desc">Institution Name offers transparent, affordable tuition fees with flexible
                                         payment plans, ensuring quality education is accessible to all aspiring students.</p>
                                 </div>
                                 <div class="rs-tuition-btn">
-                                    <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="tuition-fee.html">
+                                    <a class="rs-btn has-icon has-theme-red radius-15 hover-black" href="javascript:void(0)" aria-disabled="true" @click.prevent>
                                         <span class="btn-text-wrap">
                                  <span class="text-default">Detailed Plans</span>
                                         <span class="text-hover">Detailed Plans</span>
