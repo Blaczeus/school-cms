@@ -184,6 +184,40 @@ body.public-template-active .public-header-sticky-wrapper.active {
     background: var(--rs-theme-red);
 }
 
+body.public-template-active
+    .rs-header-area.has-theme-red
+    .public-header-sticky-wrapper.active
+    .main-menu
+    > ul
+    > li
+    > a {
+    color: var(--rs-white);
+}
+
+body.public-template-active
+    .rs-header-area.has-theme-red
+    .public-header-sticky-wrapper.active
+    .main-menu
+    > ul
+    > li:hover
+    > a,
+body.public-template-active
+    .rs-header-area.has-theme-red
+    .public-header-sticky-wrapper.active
+    .main-menu
+    > ul
+    > li.active
+    > a,
+body.public-template-active
+    .rs-header-area.has-theme-red
+    .public-header-sticky-wrapper.active
+    .main-menu
+    > ul
+    > li.menu-item-has-children:hover
+    > a::after {
+    color: var(--rs-theme-yellow);
+}
+
 body.public-template-active .main-menu > ul > li > a {
     align-items: center;
     line-height: 1;
@@ -231,4 +265,143 @@ body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ul li .rs-bre
 
 body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ul li .rs-breadcrumb-icon svg {
     display: block;
+}
+
+body.public-template-active .accordion-collapse.collapse.show,
+body.public-template-active .accordion-collapse.collapsing {
+    visibility: visible;
+}
+
+body.public-template-active .rs-faculty-four .rs-faculty-wrapper {
+    align-items: stretch;
+}
+
+body.public-template-active .rs-faculty-four .rs-faculty-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body.public-template-active .rs-faculty-four .rs-faculty-thumb {
+    aspect-ratio: 1.26;
+    overflow: hidden;
+}
+
+body.public-template-active .rs-faculty-four .rs-faculty-thumb img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+body.public-template-active .rs-faculty-four .rs-faculty-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+body.public-template-active .rs-faculty-four .rs-faculty-title {
+    min-height: 3.2em;
+}
+
+body.public-template-active .rs-faculty-four .rs-faculty-desc {
+    display: -webkit-box;
+    min-height: 5.25em;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+body.public-template-active .rs-faculty-four .rs-faculty-btn {
+    margin-top: auto;
+}
+
+body.public-template-active .public-faculty-page .rs-accordion-two .accordion-button:not(.collapsed),
+body.public-template-active .public-faculty-page .rs-accordion-two .accordion-button:hover {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-faculty-page .rs-accordion-two .accordion-button:not(.collapsed) svg path,
+body.public-template-active .public-faculty-page .rs-accordion-two .accordion-button:hover svg path {
+    fill: var(--rs-white);
+}
+
+body.public-template-active .public-faculty-page .public-faculty-programs::before {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active .public-faculty-page .public-faculty-programs .swiper-slide {
+    display: flex;
+    height: auto;
+}
+
+body.public-template-active .public-faculty-page .public-faculty-programs .rs-program-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+body.public-template-active .public-faculty-page .public-faculty-programs .rs-program-thumb {
+    aspect-ratio: 1.36;
+}
+
+body.public-template-active .public-faculty-page .public-faculty-programs .rs-program-thumb img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+body.public-template-active .public-faculty-page .public-faculty-programs .rs-program-content {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+}
+
+body.public-template-active .public-faculty-page .public-faculty-programs .rs-program-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+}
+
+body.public-template-active .public-faculty-page .public-faculty-programs .rs-program-title {
+    min-height: 3em;
+}
+
+body.public-template-active .public-faculty-page .public-faculty-programs .rs-program-title a,
+body.public-template-active .public-faculty-page .public-faculty-programs .rs-program-desc,
+body.public-template-active .public-faculty-page .public-faculty-programs .rs-program-list-item p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+body.public-template-active .public-faculty-page .public-faculty-programs .rs-program-title a {
+    -webkit-line-clamp: 2;
+}
+
+body.public-template-active .public-faculty-page .public-faculty-programs .rs-program-desc {
+    min-height: 4.5em;
+    -webkit-line-clamp: 3;
+}
+
+body.public-template-active .public-faculty-page .public-faculty-programs .rs-program-feature {
+    margin-bottom: 25px;
+    min-height: 6.5em;
+}
+
+body.public-template-active .public-faculty-page .public-faculty-programs .rs-program-list-item p {
+    -webkit-line-clamp: 1;
+}
+
+body.public-template-active .public-faculty-page .public-faculty-programs .rs-program-btn {
+    margin-top: auto;
+}
+
+body.public-template-active
+    .public-faculty-page
+    .public-faculty-programs
+    .rs-pagination.swiper-pagination.has-theme-red
+    .swiper-pagination-bullet {
+    border-color: var(--rs-theme-red);
 }

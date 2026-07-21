@@ -37,7 +37,9 @@ const resolvedHeaderVariant = computed<PublicHeaderVariant>(() => {
         return props.headerVariant;
     }
 
-    return page.component.startsWith('Public/News/') ? 'overlay' : 'standard';
+    return page.component.startsWith('Public/News/') || page.component.startsWith('Public/Faculties/')
+        ? 'overlay'
+        : 'standard';
 });
 
 const removeInertiaFinishListener = router.on('finish', async () => {

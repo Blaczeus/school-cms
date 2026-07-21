@@ -36,7 +36,7 @@ export const publicNavigation: PublicNavItem[] = [
     {
         label: 'Academics',
         items: [
-            { label: 'Faculties' },
+            { label: 'Faculties', href: '/faculties' },
             { label: 'Departments' },
             { label: 'Courses / Programmes' },
         ],

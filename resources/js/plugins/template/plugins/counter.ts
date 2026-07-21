@@ -4,6 +4,7 @@ import type { TemplateLifecyclePlugin } from '../lifecycle';
 type JQueryCollection = {
     appear?: (handler: (event?: Event) => void) => JQueryCollection;
     attr: (name: string) => string | undefined;
+    data: (name: string, value?: unknown) => JQueryCollection | unknown;
     each: (handler: (this: Element) => void) => JQueryCollection;
     html: (value: string | undefined) => JQueryCollection;
     length: number;
@@ -36,11 +37,23 @@ export function createCounterPlugin(): TemplateLifecyclePlugin {
                 return;
             }
 
-            odometers.appear?.(() => {
-                $('.odometer').each(function (this: Element) {
+            odometers.each(function (this: Element) {
+                const element = $(this);
+
+                element.html('00');
+                element.data('templateCounterComplete', false);
+
+                element.appear?.(function (this: Element) {
+                    const counter = $(this);
+
+                    if (counter.data('templateCounterComplete')) {
+                        return;
+                    }
+
                     const countNumber = $(this).attr('data-count');
 
-                    $(this).html(countNumber);
+                    counter.html(countNumber);
+                    counter.data('templateCounterComplete', true);
                 });
             });
 

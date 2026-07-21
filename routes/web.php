@@ -4,6 +4,20 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::inertia('/', 'Public/Home')->name('home');
+Route::inertia('/faculties', 'Public/Faculties/Index')->name('faculties.index');
+Route::get('/faculties/{slug}', function (string $slug) {
+    abort_unless(in_array($slug, [
+        'computing-and-technology',
+        'engineering',
+        'management-and-social-sciences',
+        'arts-and-humanities',
+        'health-sciences',
+    ], true), 404);
+
+    return Inertia::render('Public/Faculties/Show', [
+        'slug' => $slug,
+    ]);
+})->name('faculties.show');
 Route::inertia('/news', 'Public/News/Index')->name('news.index');
 Route::get('/news/{slug}', fn (string $slug) => Inertia::render('Public/News/Show', [
     'slug' => $slug,
