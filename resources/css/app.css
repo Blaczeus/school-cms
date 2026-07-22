@@ -184,6 +184,30 @@ body.public-template-active .public-header-sticky-wrapper.active {
     background: var(--rs-theme-red);
 }
 
+body.public-template-active .rs-header-area .public-header-container {
+    padding-inline: clamp(16px, 2.75vw, 44px);
+}
+
+body.public-template-active .public-header-sticky-wrapper.active .header-btn .rs-btn {
+    background: var(--rs-white);
+    border-color: var(--rs-white);
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-header-sticky-wrapper.active .header-btn .rs-btn.has-icon .icon-box svg path {
+    fill: var(--rs-theme-red);
+}
+
+body.public-template-active .public-header-sticky-wrapper.active .header-btn .rs-btn:hover {
+    background: var(--rs-white);
+    border-color: var(--rs-white);
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-header-sticky-wrapper.active .header-btn .rs-btn:hover .icon-box svg path {
+    fill: var(--rs-theme-red);
+}
+
 body.public-template-active
     .rs-header-area.has-theme-red
     .public-header-sticky-wrapper.active
@@ -213,9 +237,45 @@ body.public-template-active
     .public-header-sticky-wrapper.active
     .main-menu
     > ul
+    > li
+    > a.active,
+body.public-template-active
+    .rs-header-area.has-theme-red
+    .public-header-sticky-wrapper.active
+    .main-menu
+    > ul
     > li.menu-item-has-children:hover
     > a::after {
     color: var(--rs-theme-yellow);
+}
+
+body.public-template-active .rs-header-area.has-theme-red .main-menu > ul > li.active > a,
+body.public-template-active .rs-header-area.has-theme-red .main-menu > ul > li > a.active,
+body.public-template-active .rs-header-area.has-theme-red .main-menu .submenu li.active > a,
+body.public-template-active .rs-header-area.has-theme-red .main-menu .submenu li a.active {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .rs-header-area.has-theme-red .main-menu .submenu li.active > a::before,
+body.public-template-active .rs-header-area.has-theme-red .main-menu .submenu li a.active::before {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active
+    .public-header-overlay
+    .public-header-overlay-wrapper
+    .main-menu
+    > ul
+    > li.active
+    > a,
+body.public-template-active
+    .public-header-overlay
+    .public-header-overlay-wrapper
+    .main-menu
+    > ul
+    > li
+    > a.active {
+    color: var(--rs-white);
 }
 
 body.public-template-active .main-menu > ul > li > a {
@@ -404,4 +464,247 @@ body.public-template-active
     .rs-pagination.swiper-pagination.has-theme-red
     .swiper-pagination-bullet {
     border-color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-departments-page .rs-filter-two .filter-main-title::before,
+body.public-template-active .public-departments-page .rs-filter-two input[type='checkbox'] ~ label::before {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active .public-departments-page .rs-filter-two .filter-title,
+body.public-template-active .public-departments-page .rs-filter-three .rs-result-count,
+body.public-template-active .public-departments-page .rs-program-five .rs-program-title {
+    color: var(--rs-title-primary);
+}
+
+body.public-template-active .public-departments-page .rs-filter-two .show-more-btn:hover,
+body.public-template-active .public-departments-page .rs-filter-three .rs-filter-search input:focus,
+body.public-template-active .public-departments-page .rs-program-five .rs-program-title a:hover {
+    border-color: var(--rs-theme-red);
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-departments-page .rs-program-five .rs-program-item {
+    align-items: stretch;
+}
+
+body.public-template-active .public-departments-page .rs-program-five .rs-program-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+body.public-template-active .public-departments-page .rs-program-five .rs-program-title {
+    min-height: 3.1em;
+}
+
+body.public-template-active .public-departments-page .rs-program-five .rs-program-title a,
+body.public-template-active .public-departments-page .rs-program-five .rs-program-desc,
+body.public-template-active .public-departments-page .rs-program-five .rs-program-tag {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+body.public-template-active .public-departments-page .rs-program-five .rs-program-title a {
+    -webkit-line-clamp: 2;
+}
+
+body.public-template-active .public-departments-page .rs-program-five .rs-program-desc {
+    min-height: 4.5em;
+    -webkit-line-clamp: 3;
+}
+
+body.public-template-active .public-departments-page .rs-program-five .rs-program-tag {
+    -webkit-line-clamp: 1;
+}
+
+body.public-template-active .public-departments-page .rs-program-five .rs-program-btn {
+    margin-top: auto;
+}
+
+body.public-template-active .public-departments-page .rs-program-five .rs-program-btn .public-department-card-action {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active
+    .public-departments-page
+    .rs-program-five
+    .rs-program-btn
+    .public-department-card-action.has-icon
+    svg
+    path,
+body.public-template-active
+    .public-departments-page
+    .rs-program-five
+    .rs-program-btn
+    .public-department-card-action:hover
+    .icon-box
+    svg
+    path {
+    fill: var(--rs-theme-red);
+}
+
+body.public-template-active .public-departments-page .rs-program-five .rs-program-thumb {
+    aspect-ratio: 1.42;
+}
+
+body.public-template-active .public-departments-page .rs-program-five .rs-program-thumb img {
+    height: 100%;
+    object-fit: cover;
+}
+
+body.public-template-active .public-department-details-page .rs-program-details .has-theme-red,
+body.public-template-active .public-department-details-page .rs-program-details .text-red {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active
+    .public-department-details-page
+    .rs-program-details
+    .rs-program-details-tab-wrapper
+    .nav-link.active,
+body.public-template-active
+    .public-department-details-page
+    .rs-program-details
+    .rs-program-details-tab-wrapper
+    .nav-link:hover {
+    background: var(--rs-theme-red);
+    border-color: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active
+    .public-department-details-page
+    .rs-program-details
+    .rs-program-details-feature-icon
+    img {
+    height: 42px;
+    object-fit: contain;
+    width: 42px;
+}
+
+body.public-template-active
+    .public-department-details-page
+    .rs-program-details
+    .rs-program-details-feature-icon
+    i {
+    color: var(--rs-theme-red);
+    font-size: 42px;
+    line-height: 1;
+}
+
+body.public-template-active
+    .public-department-details-page
+    .rs-program-details
+    .rs-program-details-about-list
+    li::before,
+body.public-template-active
+    .public-department-details-page
+    .rs-scholarships-three
+    .rs-scholarships-list::before {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active
+    .public-department-details-page
+    .rs-program-details
+    .rs-program-details-about-list
+    li
+    span,
+body.public-template-active
+    .public-department-details-page
+    .rs-program-details
+    .curriculum-title {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active
+    .public-department-details-page
+    .rs-team-four
+    .rs-team-item.active,
+body.public-template-active
+    .public-department-details-page
+    .rs-team-four
+    .rs-team-item:hover {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active
+    .public-department-details-page
+    .rs-team-four
+    .rs-team-item.active
+    .rs-team-social,
+body.public-template-active
+    .public-department-details-page
+    .rs-team-four
+    .rs-team-item:hover
+    .rs-team-social {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.public-template-active
+    .public-department-details-page
+    .rs-team-four
+    .rs-team-item.active
+    .rs-team-title,
+body.public-template-active
+    .public-department-details-page
+    .rs-team-four
+    .rs-team-item.active
+    .rs-team-title
+    a,
+body.public-template-active
+    .public-department-details-page
+    .rs-team-four
+    .rs-team-title
+    a:hover,
+body.public-template-active
+    .public-department-details-page
+    .rs-team-four
+    .rs-team-item:hover
+    .rs-team-title,
+body.public-template-active
+    .public-department-details-page
+    .rs-team-four
+    .rs-team-item.active
+    .rs-team-designation,
+body.public-template-active
+    .public-department-details-page
+    .rs-team-four
+    .rs-team-item:hover
+    .rs-team-designation {
+    color: var(--rs-white);
+}
+
+body.public-template-active
+    .public-department-details-page
+    .rs-team-four
+    .rs-team-item.active
+    .rs-team-title
+    a::before,
+body.public-template-active
+    .public-department-details-page
+    .rs-team-four
+    .rs-team-item:hover
+    .rs-team-title
+    a::before {
+    display: none;
+}
+
+body.public-template-active
+    .public-department-details-page
+    .rs-team-four
+    .theme-social.has-theme-red
+    a:hover {
+    background: var(--rs-theme-red);
+    border-color: var(--rs-theme-red);
+}
+
+@media only screen and (max-width: 767px) {
+    body.public-template-active .public-departments-page .rs-program-five .rs-program-title,
+    body.public-template-active .public-departments-page .rs-program-five .rs-program-desc {
+        min-height: unset;
+    }
 }

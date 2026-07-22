@@ -37,7 +37,9 @@ const resolvedHeaderVariant = computed<PublicHeaderVariant>(() => {
         return props.headerVariant;
     }
 
-    return page.component.startsWith('Public/News/') || page.component.startsWith('Public/Faculties/')
+    return page.component.startsWith('Public/News/') ||
+        page.component.startsWith('Public/Faculties/') ||
+        page.component.startsWith('Public/Departments/')
         ? 'overlay'
         : 'standard';
 });

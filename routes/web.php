@@ -5,6 +5,25 @@ use Inertia\Inertia;
 
 Route::inertia('/', 'Public/Home')->name('home');
 Route::inertia('/faculties', 'Public/Faculties/Index')->name('faculties.index');
+Route::inertia('/departments', 'Public/Departments/Index')->name('departments.index');
+Route::get('/departments/{slug}', function (string $slug) {
+    abort_unless(in_array($slug, [
+        'computer-science',
+        'software-engineering',
+        'cybersecurity',
+        'electrical-and-electronic-engineering',
+        'civil-engineering',
+        'business-administration',
+        'economics',
+        'mass-communication',
+        'public-health',
+        'nursing-science',
+    ], true), 404);
+
+    return Inertia::render('Public/Departments/Show', [
+        'slug' => $slug,
+    ]);
+})->name('departments.show');
 Route::get('/faculties/{slug}', function (string $slug) {
     abort_unless(in_array($slug, [
         'computing-and-technology',

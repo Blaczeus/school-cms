@@ -61,7 +61,7 @@ const buttonClass = computed(() => {
 <template>
     <header>
         <div :class="headerAreaClass">
-            <div class="container-fluid g-0">
+            <div class="container-fluid g-0 public-header-container">
                 <div v-if="isRed && !isOverlay" :class="headerTopClass">
                     <div class="header-top-left">
                         <div class="header-top-content">
@@ -168,7 +168,7 @@ const buttonClass = computed(() => {
 
     <header v-if="isRed">
         <div :class="staticHeaderAreaClass">
-            <div class="container-fluid g-0">
+            <div class="container-fluid g-0 public-header-container">
                 <div :class="staticWrapperClass">
                     <div class="header-left">
                         <div class="header-logo">
