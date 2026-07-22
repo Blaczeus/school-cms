@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::inertia('/', 'Public/Home')->name('home');
+Route::inertia('/about', 'Public/About/Index')->name('about.index');
 Route::inertia('/faculties', 'Public/Faculties/Index')->name('faculties.index');
 Route::inertia('/departments', 'Public/Departments/Index')->name('departments.index');
 Route::get('/departments/{slug}', function (string $slug) {

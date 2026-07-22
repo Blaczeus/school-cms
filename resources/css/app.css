@@ -702,6 +702,142 @@ body.public-template-active
     border-color: var(--rs-theme-red);
 }
 
+body.public-template-active .public-about-page .has-theme-red {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-about-page .page-sidebar .page-sidebar-active a,
+body.public-template-active .public-about-page .page-sidebar .page-sidebar-item ul li a:hover {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-about-page .page-sidebar .page-sidebar-active a span svg path,
+body.public-template-active .public-about-page .page-sidebar .page-sidebar-item ul li a:hover span svg path {
+    fill: var(--rs-white);
+}
+
+body.public-template-active .public-about-page .page-sidebar .page-sidebar-line::before {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active .public-about-page .rs-quote-wrapper .rs-quote-icon {
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+body.public-template-active .public-about-page .rs-quote-wrapper .rs-quote-icon svg {
+    height: 40px;
+    width: 40px;
+}
+
+body.public-template-active .public-about-page .rs-quote-wrapper .rs-quote-icon svg path {
+    fill: var(--rs-theme-yellow);
+}
+
+body.public-template-active .public-about-page .rs-counter-two {
+    overflow: hidden;
+}
+
+body.public-template-active .public-about-page .rs-counter-two .rs-counter-bg-thumb::before {
+    background-image: linear-gradient(
+        66.21deg,
+        color-mix(in srgb, var(--rs-theme-red) 94%, transparent) 11.06%,
+        color-mix(in srgb, var(--rs-theme-red) 62%, transparent) 100%
+    );
+}
+
+body.public-template-active .public-about-page .rs-counter-two .rs-counter-icon i {
+    display: inline-flex;
+    font-size: 42px;
+    line-height: 1;
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-about-page .rs-counter-two .rs-counter-number,
+body.public-template-active .public-about-page .rs-counter-two .prefix,
+body.public-template-active .public-about-page .rs-counter-two .rs-counter-title {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-about-page .public-about-features {
+    margin-top: 65px;
+}
+
+body.public-template-active .public-about-page .public-about-features .rs-why-choose-wrapper {
+    align-items: stretch;
+}
+
+body.public-template-active .public-about-page .public-about-features .rs-why-choose-item {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 50px);
+}
+
+body.public-template-active .public-about-page .public-about-features .rs-why-choose-icon {
+    background: var(--rs-white);
+}
+
+body.public-template-active .public-about-page .public-about-features .rs-why-choose-icon i {
+    color: var(--rs-theme-red);
+    display: inline-flex;
+    font-size: 50px;
+    line-height: 1;
+}
+
+body.public-template-active .public-about-page .public-about-features .rs-why-choose-title {
+    color: var(--rs-title-primary);
+}
+
+body.public-template-active .public-about-page .public-about-features .rs-why-choose-desc {
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-about-page .public-about-gallery .rs-gallery-btn .rs-btn {
+    border-radius: 999px;
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-about-page .public-about-gallery .rs-gallery-btn .rs-btn.has-icon .icon-box svg path {
+    fill: var(--rs-white);
+}
+
+body.public-template-active .public-about-page .public-about-gallery .rs-gallery-btn .rs-btn:hover {
+    background: var(--rs-bg-black);
+    color: var(--rs-theme-red);
+    text-decoration: none;
+}
+
+body.public-template-active
+    .public-about-page
+    .public-about-gallery
+    .rs-gallery-btn
+    .rs-btn:hover
+    .icon-box
+    svg
+    path {
+    fill: var(--rs-theme-red);
+}
+
+body.public-template-active
+    .public-about-page
+    .rs-pagination.swiper-pagination.has-theme-red
+    .swiper-pagination-bullet {
+    border-color: var(--rs-theme-red);
+}
+
+body.public-template-active
+    .public-about-page
+    .rs-pagination.swiper-pagination.has-theme-red
+    .swiper-pagination-bullet.swiper-pagination-bullet-active,
+body.public-template-active
+    .public-about-page
+    .rs-pagination.swiper-pagination.has-theme-red
+    .swiper-pagination-bullet:hover {
+    background: var(--rs-theme-red);
+    border-color: var(--rs-theme-red);
+}
+
 @media only screen and (max-width: 767px) {
     body.public-template-active .public-departments-page .rs-program-five .rs-program-title,
     body.public-template-active .public-departments-page .rs-program-five .rs-program-desc {
