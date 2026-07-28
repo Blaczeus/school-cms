@@ -8,12 +8,14 @@ withDefaults(
         description?: string;
         columnClass?: string;
         background?: string;
+        showShape?: boolean;
     }>(),
     {
         description:
             'Education goes beyond textbooks and classrooms. We believe in empowering students to explore their passions and challenge conventions.',
         columnClass: 'col-xl-6 col-lg-10',
         background: '/public-site/images/bg/breadcrumb-bg-thumb-01.webp',
+        showShape: true,
     },
 );
 </script>
@@ -25,7 +27,7 @@ withDefaults(
             class="rs-breadcrumb-bg-thumb include-bg"
             :data-background="background"
         />
-        <div class="rs-breadcrumb-shape">
+        <div v-if="showShape" class="rs-breadcrumb-shape">
             <img src="/public-site/images/shape/arrow-shape-two.webp" alt="image" />
         </div>
         <div class="container-fluid g-0">

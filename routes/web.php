@@ -5,6 +5,21 @@ use Inertia\Inertia;
 
 Route::inertia('/', 'Public/Home')->name('home');
 Route::inertia('/about', 'Public/About/Index')->name('about.index');
+Route::inertia('/alumni', 'Public/Alumni/Index')->name('alumni.index');
+Route::get('/alumni/{slug}', function (string $slug) {
+    abort_unless(in_array($slug, [
+        'esther-howard',
+        'albert-flores',
+        'kathryn-murphy',
+        'leslie-alexander',
+        'guy-hawkins',
+        'floyd-miles',
+    ], true), 404);
+
+    return Inertia::render('Public/Alumni/Show', [
+        'slug' => $slug,
+    ]);
+})->name('alumni.show');
 Route::inertia('/faculties', 'Public/Faculties/Index')->name('faculties.index');
 Route::inertia('/departments', 'Public/Departments/Index')->name('departments.index');
 Route::get('/departments/{slug}', function (string $slug) {

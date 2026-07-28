@@ -279,7 +279,9 @@ body.public-template-active
 }
 
 body.public-template-active .main-menu > ul > li > a {
+    display: inline-flex;
     align-items: center;
+    gap: 6px;
     line-height: 1;
 }
 
@@ -287,6 +289,9 @@ body.public-template-active .main-menu > ul > li.menu-item-has-children > a::aft
     display: inline-flex;
     align-items: center;
     line-height: 1;
+    margin-top: 0;
+    position: static;
+    transform: none;
 }
 
 body.public-template-active
@@ -836,6 +841,166 @@ body.public-template-active
     .swiper-pagination-bullet:hover {
     background: var(--rs-theme-red);
     border-color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-alumni-page .has-theme-red {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-alumni-page .section-subtitle.has-theme-red svg path,
+body.public-template-active .public-alumni-page .rs-btn.has-icon .icon-box svg path {
+    fill: currentColor;
+}
+
+body.public-template-active .public-alumni-page .rs-team-three .rs-team-title a:hover,
+body.public-template-active .public-alumni-page .rs-blog-one .rs-blog-title a:hover,
+body.public-template-active .public-alumni-page .rs-blog-one .rs-blog-meta-author-content a:hover,
+body.public-template-active .public-alumni-page .rs-event-one .rs-event-title a:hover {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-alumni-page .rs-btn.has-theme-red.hover-black:hover {
+    background: var(--rs-bg-black);
+    color: var(--rs-white);
+    text-decoration: none;
+}
+
+body.public-template-active .public-alumni-page .rs-btn.has-theme-red .btn-text-wrap span,
+body.public-template-active .public-alumni-page .rs-btn.has-theme-red.hover-black:hover .btn-text-wrap span {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-alumni-page .rs-btn.has-theme-red .icon-box,
+body.public-template-active .public-alumni-page .rs-btn.has-theme-red.hover-black:hover .icon-box {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-alumni-page .rs-btn.has-theme-red .icon-box svg path,
+body.public-template-active .public-alumni-page .rs-btn.has-theme-red.hover-black:hover .icon-box svg path {
+    fill: var(--rs-white);
+}
+
+body.public-template-active .public-alumni-page .public-alumni-profiles {
+    background: var(--rs-white);
+}
+
+body.public-template-active .public-alumni-page .public-alumni-profiles .rs-team-wrapper {
+    align-items: stretch;
+}
+
+body.public-template-active .public-alumni-page .public-alumni-profiles .rs-team-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--rs-bg-primary);
+}
+
+body.public-template-active .public-alumni-page .public-alumni-profiles .rs-team-thumb img {
+    aspect-ratio: 1.18 / 1;
+    object-fit: cover;
+    object-position: top center;
+}
+
+body.public-template-active .public-alumni-page .public-alumni-profiles .rs-team-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+body.public-template-active .public-alumni-page .public-alumni-profiles .rs-team-bio {
+    display: -webkit-box;
+    min-height: 58px;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+body.public-template-active .public-alumni-page .public-alumni-profiles .rs-team-btn {
+    margin-top: auto;
+}
+
+body.public-template-active .public-alumni-page .rs-btn.has-bg-white.hover-red:hover,
+body.public-template-active .public-alumni-page .rs-gallery-two .rs-gallery-btn .rs-btn-circle:hover {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-alumni-page .rs-btn.has-bg-white.hover-red:hover .icon-box svg path {
+    fill: var(--rs-white);
+}
+
+body.public-template-active .public-alumni-page .rs-btn.has-bg-white.hover-red:hover .btn-text-wrap span {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-alumni-page .public-alumni-events.rs-event-one .rs-event-item {
+    background: var(--rs-white);
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+}
+
+body.public-template-active .public-alumni-page .public-alumni-events.rs-event-one .rs-event-title,
+body.public-template-active .public-alumni-page .public-alumni-events.rs-event-one .rs-event-title a {
+    color: var(--rs-title-primary);
+}
+
+body.public-template-active .public-alumni-page .public-alumni-events.rs-event-one .rs-event-meta-item {
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-alumni-page .public-alumni-events.rs-event-one .rs-event-meta-item i {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-alumni-page .public-alumni-events.rs-event-one .rs-event-shape {
+    opacity: 0.16;
+    transform: rotateY(180deg);
+    z-index: -1;
+}
+
+body.public-template-active .public-alumni-details-page .rs-alumni-details .rs-alumni-author-desig,
+body.public-template-active .public-alumni-details-page .rs-alumni-details .rs-alumni-info-title,
+body.public-template-active .public-alumni-details-page .rs-experience-one .rs-section-title.has-theme-red {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-alumni-details-page .rs-alumni-details .rs-info-list li::before,
+body.public-template-active .public-alumni-details-page .rs-experience-one .has-border::after {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active .public-alumni-details-page .rs-experience-one .rs-certificate-item .rs-btn {
+    color: var(--rs-title-primary);
+}
+
+body.public-template-active .public-alumni-details-page .rs-experience-one .rs-certificate-item .rs-btn .icon-box svg path {
+    fill: var(--rs-title-primary);
+}
+
+body.public-template-active .public-alumni-details-page .rs-experience-one .rs-certificate-item .rs-btn:hover {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+    text-decoration: none;
+}
+
+body.public-template-active
+    .public-alumni-details-page
+    .rs-experience-one
+    .rs-certificate-item
+    .rs-btn:hover
+    .btn-text-wrap
+    span {
+    color: var(--rs-white);
+}
+
+body.public-template-active
+    .public-alumni-details-page
+    .rs-experience-one
+    .rs-certificate-item
+    .rs-btn:hover
+    .icon-box
+    svg
+    path {
+    fill: var(--rs-white);
 }
 
 @media only screen and (max-width: 767px) {
