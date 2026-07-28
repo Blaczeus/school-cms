@@ -20,6 +20,24 @@ Route::get('/alumni/{slug}', function (string $slug) {
         'slug' => $slug,
     ]);
 })->name('alumni.show');
+Route::inertia('/events', 'Public/Events/Index')->name('events.index');
+Route::get('/events/{slug}', function (string $slug) {
+    abort_unless(in_array($slug, [
+        'academic-excellence-intellectual-development',
+        'research-innovation-showcase',
+        'digital-transformation-technology-future',
+        'career-readiness-workforce-transformation',
+        'community-service-and-impact-day',
+        'student-leadership-conference',
+        'library-research-skills-workshop',
+        'health-sciences-open-seminar',
+        'entrepreneurship-innovation-clinic',
+    ], true), 404);
+
+    return Inertia::render('Public/Events/Show', [
+        'slug' => $slug,
+    ]);
+})->name('events.show');
 Route::inertia('/faculties', 'Public/Faculties/Index')->name('faculties.index');
 Route::inertia('/departments', 'Public/Departments/Index')->name('departments.index');
 Route::get('/departments/{slug}', function (string $slug) {

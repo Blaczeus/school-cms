@@ -55,6 +55,7 @@ export const publicNavigation: PublicNavItem[] = [
         items: [
             { label: 'Service Units' },
             { label: 'Campus Life' },
+            { label: 'Events', href: '/events' },
             { label: 'Library' },
             { label: 'Gallery' },
         ],
@@ -73,6 +74,7 @@ export const footerCampusLinks: PublicNavItem[] = [
 export const footerUsefulLinks: PublicNavItem[] = [
     { label: 'Faculties' },
     { label: 'Programmes' },
+    { label: 'Campus Events', href: '/events' },
     { label: 'News', href: '/news' },
     { label: 'How to Apply' },
 ];

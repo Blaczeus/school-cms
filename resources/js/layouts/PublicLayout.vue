@@ -38,6 +38,7 @@ const resolvedHeaderVariant = computed<PublicHeaderVariant>(() => {
     }
 
     return page.component.startsWith('Public/News/') ||
+        page.component.startsWith('Public/Events/Show') ||
         page.component.startsWith('Public/Faculties/') ||
         page.component.startsWith('Public/Departments/')
         ? 'overlay'

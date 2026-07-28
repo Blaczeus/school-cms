@@ -181,7 +181,7 @@ body.public-template-active .public-header-overlay {
 }
 
 body.public-template-active .public-header-sticky-wrapper.active {
-    background: var(--rs-theme-red);
+    background: var(--rs-white);
 }
 
 body.public-template-active .rs-header-area .public-header-container {
@@ -189,23 +189,23 @@ body.public-template-active .rs-header-area .public-header-container {
 }
 
 body.public-template-active .public-header-sticky-wrapper.active .header-btn .rs-btn {
-    background: var(--rs-white);
-    border-color: var(--rs-white);
-    color: var(--rs-theme-red);
+    background: var(--rs-black);
+    border-color: var(--rs-black);
+    color: var(--rs-white);
 }
 
 body.public-template-active .public-header-sticky-wrapper.active .header-btn .rs-btn.has-icon .icon-box svg path {
-    fill: var(--rs-theme-red);
+    fill: var(--rs-white);
 }
 
 body.public-template-active .public-header-sticky-wrapper.active .header-btn .rs-btn:hover {
-    background: var(--rs-white);
-    border-color: var(--rs-white);
-    color: var(--rs-theme-red);
+    background: var(--rs-theme-red);
+    border-color: var(--rs-theme-red);
+    color: var(--rs-white);
 }
 
 body.public-template-active .public-header-sticky-wrapper.active .header-btn .rs-btn:hover .icon-box svg path {
-    fill: var(--rs-theme-red);
+    fill: var(--rs-white);
 }
 
 body.public-template-active
@@ -215,7 +215,7 @@ body.public-template-active
     > ul
     > li
     > a {
-    color: var(--rs-white);
+    color: var(--rs-title-primary);
 }
 
 body.public-template-active
@@ -246,7 +246,23 @@ body.public-template-active
     > ul
     > li.menu-item-has-children:hover
     > a::after {
-    color: var(--rs-theme-yellow);
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active
+    .rs-header-area.has-theme-red
+    .public-header-sticky-wrapper.active
+    .header-search-icon
+    i {
+    color: var(--rs-title-primary);
+}
+
+body.public-template-active
+    .rs-header-area.has-theme-red
+    .public-header-sticky-wrapper.active
+    .header-bar-icon
+    span {
+    background: var(--rs-title-primary);
 }
 
 body.public-template-active .rs-header-area.has-theme-red .main-menu > ul > li.active > a,
@@ -1001,6 +1017,107 @@ body.public-template-active
     svg
     path {
     fill: var(--rs-white);
+}
+
+body.public-template-active .public-events-page .public-events-listing .rs-event-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+body.public-template-active .public-events-page .public-events-listing .rs-event-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--rs-white);
+}
+
+body.public-template-active .public-events-page .public-events-listing .rs-event-thumb img {
+    aspect-ratio: 1.36 / 1;
+    object-fit: cover;
+    object-position: top center;
+}
+
+body.public-template-active .public-events-page .public-events-listing .rs-event-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+body.public-template-active .public-events-page .public-events-listing .rs-event-title {
+    min-height: 64px;
+}
+
+body.public-template-active .public-events-page .public-events-listing .rs-event-btn {
+    margin-top: auto;
+}
+
+body.public-template-active .public-events-page .public-events-listing .rs-event-tag,
+body.public-template-active .public-events-page .public-events-listing .rs-event-btn .rs-btn:hover {
+    background: var(--rs-theme-red);
+    border-color: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-events-page .public-events-listing .rs-event-title a:hover {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-events-page .public-events-listing .rs-event-shape {
+    opacity: 0.18;
+}
+
+body.public-template-active .public-event-details-page .has-theme-red,
+body.public-template-active .public-event-details-page .rs-event-details-meta ul li i,
+body.public-template-active .public-event-details-page .rs-learning-feature .rs-list-item svg path {
+    color: var(--rs-theme-red);
+    fill: var(--rs-theme-red);
+}
+
+body.public-template-active .public-event-details-page .rs-team-two .rs-team-title:hover,
+body.public-template-active .public-event-details-page .rs-team-two .rs-team-title a:hover {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-event-details-page .rs-btn.has-theme-red {
+    background: var(--rs-theme-red);
+    border-color: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-event-details-page .rs-btn.has-theme-red:hover {
+    background: var(--rs-black);
+    border-color: var(--rs-black);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-event-details-page .theme-social.has-theme-red a svg path {
+    fill: var(--rs-theme-red);
+}
+
+body.public-template-active .public-event-details-page .theme-social.has-theme-red a:hover {
+    background: var(--rs-theme-red);
+    border-color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-event-details-page .theme-social.has-theme-red a:hover svg path {
+    fill: var(--rs-white);
+}
+
+@media only screen and (max-width: 991px) {
+    body.public-template-active .public-events-page .public-events-listing .rs-event-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body.public-template-active .public-events-page .public-events-listing .rs-event-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    body.public-template-active .public-events-page .public-events-listing .rs-event-title {
+        min-height: unset;
+    }
 }
 
 @media only screen and (max-width: 767px) {

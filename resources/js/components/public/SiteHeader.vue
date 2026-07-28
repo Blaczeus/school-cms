@@ -41,21 +41,23 @@ const stickyClass = computed(() => {
 const staticWrapperClass = computed(() =>
     isOverlay.value ? 'header-wrapper public-header-overlay-wrapper' : 'header-wrapper has-space',
 );
-const logo = computed(() =>
+const stickyLogo = computed(() =>
+    isRed.value ? '/public-site/images/logo/logo-red.webp' : '/public-site/images/logo/logo-white.webp',
+);
+const staticLogo = computed(() =>
     isOverlay.value || !isRed.value
         ? '/public-site/images/logo/logo-white.webp'
         : '/public-site/images/logo/logo-red.webp',
 );
 const searchClass = computed(() => (isRed.value ? 'header-search-icon has-theme-red' : 'header-search-icon'));
-const buttonClass = computed(() => {
-    if (isOverlay.value) {
-        return 'rs-btn has-icon has-theme-red hover-black radius-15';
-    }
-
-    return isRed.value
+const stickyButtonClass = computed(() =>
+    isRed.value
         ? 'rs-btn has-icon has-black hover-red radius-15'
-        : 'rs-btn has-icon has-theme-yellow hover-white';
-});
+        : 'rs-btn has-icon has-theme-yellow hover-white',
+);
+const staticButtonClass = computed(() =>
+    isOverlay.value ? 'rs-btn has-icon has-theme-red hover-black radius-15' : stickyButtonClass.value,
+);
 </script>
 
 <template>
@@ -96,7 +98,7 @@ const buttonClass = computed(() => {
                 <div id="rs-sticky-header" :class="stickyClass">
                     <div class="header-left">
                         <div class="header-logo">
-                            <Link href="/"><img :src="logo" :alt="publicInstitution.name" /></Link>
+                            <Link href="/"><img :src="stickyLogo" :alt="publicInstitution.name" /></Link>
                         </div>
                     </div>
                     <div class="header-menu">
@@ -127,7 +129,7 @@ const buttonClass = computed(() => {
                             </div>
                         </div>
                         <div class="header-btn">
-                            <a :class="buttonClass" href="javascript:void(0)" aria-disabled="true">
+                            <a :class="stickyButtonClass" href="javascript:void(0)" aria-disabled="true">
                                 <span class="btn-text-wrap">
                                     <span class="text-default">Apply Now</span>
                                     <span class="text-hover">Apply Now</span>
@@ -172,7 +174,7 @@ const buttonClass = computed(() => {
                 <div :class="staticWrapperClass">
                     <div class="header-left">
                         <div class="header-logo">
-                            <Link href="/"><img :src="logo" :alt="publicInstitution.name" /></Link>
+                            <Link href="/"><img :src="staticLogo" :alt="publicInstitution.name" /></Link>
                         </div>
                     </div>
                     <div class="header-menu">
@@ -203,7 +205,7 @@ const buttonClass = computed(() => {
                             </div>
                         </div>
                         <div class="header-btn">
-                            <a :class="buttonClass" href="javascript:void(0)" aria-disabled="true">
+                            <a :class="staticButtonClass" href="javascript:void(0)" aria-disabled="true">
                                 <span class="btn-text-wrap">
                                     <span class="text-default">Apply Now</span>
                                     <span class="text-hover">Apply Now</span>
