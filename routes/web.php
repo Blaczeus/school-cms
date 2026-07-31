@@ -38,6 +38,7 @@ Route::get('/events/{slug}', function (string $slug) {
         'slug' => $slug,
     ]);
 })->name('events.show');
+Route::inertia('/service-units', 'Public/ServiceUnits/Index')->name('service-units.index');
 Route::inertia('/faculties', 'Public/Faculties/Index')->name('faculties.index');
 Route::inertia('/departments', 'Public/Departments/Index')->name('departments.index');
 Route::get('/departments/{slug}', function (string $slug) {

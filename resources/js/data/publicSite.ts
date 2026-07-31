@@ -53,13 +53,13 @@ export const publicNavigation: PublicNavItem[] = [
     {
         label: 'Campus',
         items: [
-            { label: 'Service Units' },
             { label: 'Campus Life' },
             { label: 'Events', href: '/events' },
             { label: 'Library' },
             { label: 'Gallery' },
         ],
     },
+    { label: 'Service Units', href: '/service-units' },
     { label: 'News', href: '/news' },
     { label: 'Contact' },
 ];
@@ -67,6 +67,7 @@ export const publicNavigation: PublicNavItem[] = [
 export const footerCampusLinks: PublicNavItem[] = [
     { label: 'About the Institution', href: '/about' },
     { label: 'Alumni', href: '/alumni' },
+    { label: 'Service Units', href: '/service-units' },
     { label: 'Library' },
     { label: 'Campus Life' },
 ];
