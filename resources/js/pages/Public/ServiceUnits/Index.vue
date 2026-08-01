@@ -114,12 +114,12 @@ const accessSteps = [
                                     <img src="/public-site/images/shape/badge-shape.webp" alt="" />
                                 </div>
                             </div>
-                            <div
-                                id="service-unit-process-stack"
-                                class="rs-process-content-wrapper gsap-fixed-yes start-150"
-                                data-stop-under="mobile"
-                            >
-                                <div v-for="step in accessSteps" :key="step.title" class="rs-process-item">
+                            <div class="rs-process-content-wrapper public-service-units-process-stack">
+                                <div
+                                    v-for="(step, index) in accessSteps"
+                                    :key="step.title"
+                                    :class="['rs-process-item', `is-step-${index + 1}`]"
+                                >
                                     <h6 class="rs-process-title">{{ step.title }}</h6>
                                     <div class="rs-process-content">
                                         <div class="rs-process-inner">
