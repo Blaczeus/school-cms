@@ -1397,6 +1397,264 @@ body.public-template-active .public-service-units-page .rs-btn.has-bg-white.hove
     fill: var(--rs-white);
 }
 
+body.public-template-active .public-service-unit-details-page .has-theme-red,
+body.public-template-active .public-service-unit-details-page .section-subtitle.has-theme-red,
+body.public-template-active .public-service-unit-details-page .section-title.has-theme-red,
+body.public-template-active .public-service-unit-details-page .section-title.text.has-theme-red,
+body.public-template-active .public-service-unit-details-page .rs-team-details-author-desig,
+body.public-template-active .public-service-unit-details-page .rs-contact-info-item i,
+body.public-template-active .public-service-unit-details-page .rs-scholarships-three .rs-scholarships-title,
+body.public-template-active .public-service-unit-details-page .rs-award-list-icon {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-overview-location {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    color: var(--rs-text-primary);
+    font-weight: 500;
+}
+
+body.public-template-active .public-service-unit-details-page .rs-team-details-author-thumb img {
+    aspect-ratio: 1 / 0.86;
+    object-fit: cover;
+}
+
+body.public-template-active .public-service-unit-details-page .rs-team-details .rs-info-list li::before,
+body.public-template-active .public-service-unit-details-page .rs-scholarships-list::before {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active .public-service-unit-details-page .rs-contact-info-item:hover {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-service-unit-details-page .rs-contact-info-item:hover i {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-detail-main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-detail-section {
+    background: var(--rs-white);
+    border-radius: 12px;
+    padding: 35px 40px;
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-detail-section .section-desc {
+    margin-bottom: 0;
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-services .rs-scholarships-item-wrapper,
+body.public-template-active .public-service-unit-details-page .public-service-unit-requirements .rs-scholarships-item-wrapper {
+    align-items: stretch;
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-service-card,
+body.public-template-active .public-service-unit-details-page .public-service-unit-requirements .rs-scholarships-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-card-desc {
+    margin-bottom: 18px;
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-access-process {
+    background: var(--rs-white);
+    border-radius: 12px;
+    padding: 35px 40px 40px;
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-access-process .rs-process-content-wrapper {
+    display: grid;
+    gap: 18px;
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-access-process .rs-process-item {
+    width: 100%;
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-access-process .rs-process-title {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-access-process .rs-process-content {
+    background: var(--rs-bg-primary);
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-access-process .rs-process-desc {
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-access-process .rs-process-inner::before {
+    background-color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-access-process .rs-process-inner::after {
+    background-color: color-mix(in srgb, var(--rs-theme-red) 22%, transparent);
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-tables .rs-tuition-three:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-tables .rs-tuition-table-inner thead {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-tables .rs-tuition-table-inner th {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-downloads {
+    background: var(--rs-white);
+    border-radius: 12px;
+    padding: 35px 40px;
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-download-list {
+    display: grid;
+    gap: 18px;
+}
+
+body.public-template-active .public-service-unit-details-page .rs-certificate-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--rs-border-primary);
+}
+
+body.public-template-active .public-service-unit-details-page .rs-certificate-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+body.public-template-active .public-service-unit-details-page .rs-certificate-title {
+    margin-bottom: 6px;
+}
+
+body.public-template-active .public-service-unit-details-page .rs-certificate-desc {
+    margin-bottom: 0;
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-service-unit-details-page .rs-btn[disabled] {
+    cursor: not-allowed;
+    opacity: 0.82;
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-highlights .rs-award-wrapper {
+    display: block;
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-highlights .rs-award-list-item {
+    align-items: flex-start;
+}
+
+body.public-template-active .public-service-unit-details-page .rs-award-list-icon {
+    flex: 0 0 auto;
+    font-size: 24px;
+}
+
+body.public-template-active .public-service-unit-details-page .rs-award-list-content {
+    flex: 1;
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-highlight-desc {
+    margin-bottom: 0;
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-sidebar .rs-cta-two {
+    min-height: 430px;
+}
+
+body.public-template-active .public-service-unit-details-page .public-service-unit-sidebar-desc {
+    margin: 12px 0 18px;
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-service-unit-details-page .rs-cta-two .rs-cta-contact .contact-phone {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-service-unit-details-page .rs-cta-two .rs-cta-contact .contact-email {
+    overflow-wrap: anywhere;
+}
+
+body.public-template-active .public-service-unit-details-page .rs-btn.has-theme-red {
+    background: var(--rs-theme-red);
+    border-color: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-service-unit-details-page .rs-btn.has-theme-red .btn-text-wrap span,
+body.public-template-active .public-service-unit-details-page .rs-btn.has-theme-red .icon-box {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-service-unit-details-page .rs-btn.has-theme-red .icon-box svg path {
+    fill: var(--rs-white);
+}
+
+body.public-template-active .public-service-unit-details-page .rs-btn.has-theme-red.hover-black:hover {
+    background: var(--rs-bg-black);
+    border-color: var(--rs-bg-black);
+}
+
+body.public-template-active .public-service-unit-details-page .rs-btn.has-bg-white.hover-red:hover {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-service-unit-details-page .rs-btn.has-bg-white.hover-red:hover .btn-text-wrap span,
+body.public-template-active .public-service-unit-details-page .rs-btn.has-bg-white.hover-red:hover .icon-box {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-service-unit-details-page .rs-btn.has-bg-white.hover-red:hover .icon-box svg path {
+    fill: var(--rs-white);
+}
+
+@media only screen and (max-width: 1199px) {
+    body.public-template-active .public-service-unit-details-page .public-service-unit-detail-section,
+    body.public-template-active .public-service-unit-details-page .public-service-unit-access-process,
+    body.public-template-active .public-service-unit-details-page .public-service-unit-downloads {
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    body.public-template-active .public-service-unit-details-page .public-service-unit-sidebar {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body.public-template-active .public-service-unit-details-page .public-service-unit-detail-section,
+    body.public-template-active .public-service-unit-details-page .public-service-unit-access-process,
+    body.public-template-active .public-service-unit-details-page .public-service-unit-downloads {
+        padding: 25px 20px;
+    }
+
+    body.public-template-active .public-service-unit-details-page .rs-certificate-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     body.public-template-active .public-events-page .public-events-listing .rs-event-wrapper {
         grid-template-columns: repeat(2, 1fr);

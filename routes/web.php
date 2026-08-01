@@ -39,6 +39,22 @@ Route::get('/events/{slug}', function (string $slug) {
     ]);
 })->name('events.show');
 Route::inertia('/service-units', 'Public/ServiceUnits/Index')->name('service-units.index');
+Route::get('/service-units/{slug}', function (string $slug) {
+    abort_unless(in_array($slug, [
+        'university-library',
+        'ict-centre',
+        'registry',
+        'student-affairs',
+        'medical-centre',
+        'bursary',
+        'security-unit',
+        'works-and-maintenance',
+    ], true), 404);
+
+    return Inertia::render('Public/ServiceUnits/Show', [
+        'slug' => $slug,
+    ]);
+})->name('service-units.show');
 Route::inertia('/faculties', 'Public/Faculties/Index')->name('faculties.index');
 Route::inertia('/departments', 'Public/Departments/Index')->name('departments.index');
 Route::get('/departments/{slug}', function (string $slug) {
