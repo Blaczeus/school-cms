@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import NewsArticle from '@/components/public/news/NewsArticle.vue';
-import NewsBreadcrumb from '@/components/public/news/NewsBreadcrumb.vue';
+import PublicBreadcrumb from '@/components/public/PublicBreadcrumb.vue';
 import { findNewsArticle, newsArticles } from '@/data/news';
 import type { NewsArticle as NewsArticleType } from '@/types/news';
 
@@ -22,9 +22,10 @@ const article = computed(() => props.article ?? findNewsArticle(props.slug));
 </script>
 
 <template>
-    <NewsBreadcrumb
+    <PublicBreadcrumb
         title="News Details"
-        current="News Details"
+        :current="article.title"
+        :breadcrumbs="[{ label: 'News', href: '/news' }]"
         :description="article.excerpt"
     />
     <!-- postbox area start -->

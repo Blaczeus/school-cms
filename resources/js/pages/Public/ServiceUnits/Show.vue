@@ -34,6 +34,7 @@ const unit = computed(
         <PublicBreadcrumb
             title="Service Unit Details"
             :current="unit.name"
+            :breadcrumbs="[{ label: 'Service Units', href: '/service-units' }]"
             column-class="col-xl-5 col-lg-10"
             :description="unit.summary"
         />

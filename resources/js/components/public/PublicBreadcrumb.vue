@@ -1,10 +1,16 @@
 <script setup lang="ts">
 import { Link } from '@inertiajs/vue3';
 
+type BreadcrumbItem = {
+    label: string;
+    href?: string;
+};
+
 withDefaults(
     defineProps<{
         title: string;
         current: string;
+        breadcrumbs?: BreadcrumbItem[];
         description?: string;
         columnClass?: string;
         background?: string;
@@ -16,6 +22,7 @@ withDefaults(
         columnClass: 'col-xl-6 col-lg-10',
         background: '/public-site/images/bg/breadcrumb-bg-thumb-01.webp',
         showShape: true,
+        breadcrumbs: () => [],
     },
 );
 </script>
@@ -35,11 +42,11 @@ withDefaults(
                 <div :class="columnClass">
                     <div class="rs-breadcrumb-wrapper">
                         <div class="rs-breadcrumb-menu">
-                            <nav>
-                                <ul>
+                            <nav aria-label="Breadcrumb">
+                                <ol>
                                     <li class="rs-breadcumb-item">
                                         <Link href="/">Home</Link>
-                                        <span class="rs-breadcrumb-icon">
+                                        <span class="rs-breadcrumb-icon" aria-hidden="true">
                                             <svg
                                                 class="e-font-icon-svg e-fas-angle-double-right"
                                                 viewBox="0 0 448 512"
@@ -51,8 +58,23 @@ withDefaults(
                                             </svg>
                                         </span>
                                     </li>
-                                    <li class="rs-breadcumb-item">{{ current }}</li>
-                                </ul>
+                                    <li v-for="breadcrumb in breadcrumbs" :key="breadcrumb.label" class="rs-breadcumb-item">
+                                        <Link v-if="breadcrumb.href" :href="breadcrumb.href">{{ breadcrumb.label }}</Link>
+                                        <span v-else>{{ breadcrumb.label }}</span>
+                                        <span class="rs-breadcrumb-icon" aria-hidden="true">
+                                            <svg
+                                                class="e-font-icon-svg e-fas-angle-double-right"
+                                                viewBox="0 0 448 512"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"
+                                                />
+                                            </svg>
+                                        </span>
+                                    </li>
+                                    <li class="rs-breadcumb-item" aria-current="page">{{ current }}</li>
+                                </ol>
                             </nav>
                         </div>
                         <div class="rs-breadcrumb-title-wrapper">

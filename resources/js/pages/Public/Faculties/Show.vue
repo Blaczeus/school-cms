@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import FacultyAcademics from '@/components/public/faculties/FacultyAcademics.vue';
-import FacultyBreadcrumb from '@/components/public/faculties/FacultyBreadcrumb.vue';
 import FacultyDetails from '@/components/public/faculties/FacultyDetails.vue';
 import FacultyOverview from '@/components/public/faculties/FacultyOverview.vue';
 import FacultyProgrammes from '@/components/public/faculties/FacultyProgrammes.vue';
 import FacultyStats from '@/components/public/faculties/FacultyStats.vue';
 import FacultyTestimonials from '@/components/public/faculties/FacultyTestimonials.vue';
+import PublicBreadcrumb from '@/components/public/PublicBreadcrumb.vue';
 import { faculties as facultyData, findFaculty } from '@/data/faculties';
 import type { Faculty } from '@/types/faculty';
 
@@ -28,9 +28,11 @@ const faculty = computed(() => props.faculty ?? findFaculty(props.slug) ?? props
 
 <template>
     <div class="public-faculty-page bg-primary">
-        <FacultyBreadcrumb
+        <PublicBreadcrumb
             :title="faculty.name"
-            current="Faculty Details"
+            :current="faculty.name"
+            :breadcrumbs="[{ label: 'Faculties', href: '/faculties' }]"
+            background="/public-site/images/bg/breadcrumb-bg-thumb-05.webp"
             :description="faculty.summary"
         />
         <FacultyOverview :faculty="faculty" />

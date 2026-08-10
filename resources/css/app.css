@@ -334,18 +334,55 @@ body.public-template-active
 }
 
 body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ul,
+body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ol,
 body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ul li,
-body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ul li .rs-breadcrumb-icon {
+body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ol li,
+body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ul li .rs-breadcrumb-icon,
+body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ol li .rs-breadcrumb-icon {
     align-items: center;
 }
 
-body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ul li .rs-breadcrumb-icon {
+body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ol {
+    display: flex;
+    gap: 8px 8px;
+    padding-inline-start: 0;
+    margin-bottom: 0;
+}
+
+body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ol li {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+}
+
+body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ol li:last-child {
+    color: var(--rs-white);
+}
+
+body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ol li a {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+
+body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ol li a:hover {
+    color: var(--rs-theme-yellow);
+}
+
+body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ul li .rs-breadcrumb-icon,
+body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ol li .rs-breadcrumb-icon {
     display: inline-flex;
     line-height: 0;
 }
 
-body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ul li .rs-breadcrumb-icon svg {
+body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ul li .rs-breadcrumb-icon svg,
+body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ol li .rs-breadcrumb-icon svg {
     display: block;
+    width: 16px;
+    height: 16px;
+}
+
+body.public-template-active .rs-breadcrumb-one .rs-breadcrumb-menu ol li .rs-breadcrumb-icon svg path {
+    fill: var(--rs-white);
 }
 
 body.public-template-active .accordion-collapse.collapse.show,

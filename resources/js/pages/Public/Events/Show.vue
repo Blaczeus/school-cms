@@ -32,7 +32,8 @@ const event = computed(
     <div class="public-events-page public-event-details-page bg-primary">
         <PublicBreadcrumb
             title="Event Details"
-            current="Event Details"
+            :current="event.title"
+            :breadcrumbs="[{ label: 'Events', href: '/events' }]"
             column-class="col-xl-5 col-lg-6"
             background="/public-site/images/bg/breadcrumb-bg-thumb-01.webp"
             :show-shape="false"

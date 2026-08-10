@@ -33,7 +33,8 @@ const alumni = computed(
     <div class="public-alumni-page public-alumni-details-page bg-primary">
         <PublicBreadcrumb
             title="Alumni Details"
-            current="Alumni Details"
+            :current="alumni.name"
+            :breadcrumbs="[{ label: 'Alumni', href: '/alumni' }]"
             background="/public-site/images/bg/breadcrumb-bg-thumb-05.webp"
             :show-shape="false"
             :description="alumni.summary"

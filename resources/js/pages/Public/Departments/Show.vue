@@ -33,6 +33,7 @@ const department = computed(
         <PublicBreadcrumb
             title="Department Details"
             :current="department.shortName"
+            :breadcrumbs="[{ label: 'Departments', href: '/departments' }]"
             column-class="col-xl-5 col-lg-10"
             :description="department.summary"
         />
