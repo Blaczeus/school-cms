@@ -76,7 +76,7 @@ export function createMenuPlugin(): TemplateLifecyclePlugin {
                 $('#mobile-menu').meanmenu?.({
                     meanExpand: ['<i class="ri-add-large-line"></i>'],
                     meanMenuContainer: '.mobile-menu',
-                    meanScreenWidth: '1199',
+                    meanScreenWidth: '1399',
                 });
             }
 

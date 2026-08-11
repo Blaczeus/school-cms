@@ -188,6 +188,79 @@ body.public-template-active .rs-header-area .public-header-container {
     padding-inline: clamp(16px, 2.75vw, 44px);
 }
 
+body.public-template-active .rs-header-area .header-wrapper {
+    gap: clamp(20px, 2.2vw, 40px);
+    min-width: 0;
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+body.public-template-active .rs-header-area .header-left,
+body.public-template-active .rs-header-area .header-right {
+    flex: 0 0 auto;
+}
+
+body.public-template-active .rs-header-area .header-logo,
+body.public-template-active .rs-header-area .header-logo img,
+body.public-template-active .rs-header-area .header-icon-wrapper,
+body.public-template-active .rs-header-area .header-btn {
+    flex-shrink: 0;
+}
+
+body.public-template-active .rs-header-area .header-menu {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    min-width: 0;
+}
+
+body.public-template-active .rs-header-area .main-menu {
+    min-width: 0;
+    width: 100%;
+}
+
+body.public-template-active .rs-header-area .main-menu > ul {
+    flex-wrap: nowrap;
+    gap: 0 clamp(16px, 1.6vw, 32px);
+    justify-content: center;
+    width: 100%;
+}
+
+body.public-template-active .rs-header-area .main-menu > ul > li,
+body.public-template-active .rs-header-area .main-menu > ul > li > a,
+body.public-template-active .rs-header-area .header-btn .rs-btn,
+body.public-template-active .rs-header-area .header-btn .btn-text-wrap span {
+    white-space: nowrap;
+}
+
+body.public-template-active .rs-header-area .header-right {
+    gap: clamp(24px, 2vw, 35px);
+}
+
+@media only screen and (max-width: 1399px) {
+    body.public-template-active .rs-header-area .public-header-container .header-wrapper {
+        gap: clamp(18px, 3vw, 32px);
+    }
+
+    body.public-template-active .rs-header-area .public-header-container .header-menu {
+        display: none;
+    }
+
+    body.public-template-active .rs-header-three .header-btn {
+        display: block;
+    }
+
+    body.public-template-active .rs-header-area .header-right {
+        gap: clamp(16px, 2.5vw, 28px);
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    body.public-template-active .rs-header-three .header-btn {
+        display: none;
+    }
+}
+
 body.public-template-active .public-header-sticky-wrapper.active .header-btn .rs-btn {
     background: var(--rs-black);
     border-color: var(--rs-black);
