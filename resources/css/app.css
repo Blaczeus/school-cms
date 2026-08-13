@@ -176,8 +176,12 @@ body.public-template-active .loader .loader-icon img {
     display: inline-block;
 }
 
-body.public-template-active .public-header-overlay {
+body.public-template-active .public-header-overlay,
+body.public-template-active .public-header-overlay .public-header-container,
+body.public-template-active .public-header-overlay .public-header-overlay-wrapper,
+body.public-template-active .public-header-overlay .public-header-inner {
     background: transparent;
+    box-shadow: none;
 }
 
 body.public-template-active .public-header-sticky-wrapper.active {
@@ -185,18 +189,30 @@ body.public-template-active .public-header-sticky-wrapper.active {
 }
 
 body.public-template-active .rs-header-area .public-header-container {
-    padding-inline: clamp(16px, 2.75vw, 44px);
+    padding-inline: 0;
 }
 
+body.public-template-active .rs-header-top.rs-header-top-one,
 body.public-template-active .rs-header-area .header-wrapper {
-    gap: clamp(20px, 2.2vw, 40px);
-    min-width: 0;
     padding-inline-end: 0;
     padding-inline-start: 0;
+    width: 100%;
+}
+
+body.public-template-active .rs-header-area .public-header-inner {
+    display: flex;
+    gap: clamp(28px, 2.6vw, 48px);
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+    min-width: 0;
+    width: min(calc(100% - clamp(48px, 8vw, 240px)), 1680px);
 }
 
 body.public-template-active .rs-header-area .header-left,
 body.public-template-active .rs-header-area .header-right {
+    display: flex;
+    align-items: center;
     flex: 0 0 auto;
 }
 
@@ -220,10 +236,15 @@ body.public-template-active .rs-header-area .main-menu {
 }
 
 body.public-template-active .rs-header-area .main-menu > ul {
+    align-items: center;
     flex-wrap: nowrap;
-    gap: 0 clamp(16px, 1.6vw, 32px);
+    gap: 0 clamp(22px, 2vw, 38px);
     justify-content: center;
     width: 100%;
+}
+
+body.public-template-active .main-menu > ul > li.public-nav-mobile-only {
+    display: none;
 }
 
 body.public-template-active .rs-header-area .main-menu > ul > li,
@@ -234,12 +255,12 @@ body.public-template-active .rs-header-area .header-btn .btn-text-wrap span {
 }
 
 body.public-template-active .rs-header-area .header-right {
-    gap: clamp(24px, 2vw, 35px);
+    gap: clamp(26px, 2.2vw, 38px);
 }
 
 @media only screen and (max-width: 1399px) {
-    body.public-template-active .rs-header-area .public-header-container .header-wrapper {
-        gap: clamp(18px, 3vw, 32px);
+    body.public-template-active .rs-header-area .public-header-container .public-header-inner {
+        gap: clamp(18px, 3vw, 34px);
     }
 
     body.public-template-active .rs-header-area .public-header-container .header-menu {
@@ -252,6 +273,17 @@ body.public-template-active .rs-header-area .header-right {
 
     body.public-template-active .rs-header-area .header-right {
         gap: clamp(16px, 2.5vw, 28px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body.public-template-active .rs-header-area .public-header-container {
+        padding-inline: 0;
+    }
+
+    body.public-template-active .rs-header-top.rs-header-top-one,
+    body.public-template-active .rs-header-area .public-header-inner {
+        width: min(calc(100% - clamp(32px, 10vw, 56px)), 1680px);
     }
 }
 
@@ -370,17 +402,41 @@ body.public-template-active
 body.public-template-active .main-menu > ul > li > a {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
+    font-family: 'Inter', var(--rs-ff-body), var(--font-sans);
+    font-size: 17px;
+    font-weight: 500;
     line-height: 1;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 body.public-template-active .main-menu > ul > li.menu-item-has-children > a::after {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    width: 16px;
+    font-size: 18px;
     line-height: 1;
     margin-top: 0;
     position: static;
     transform: none;
+}
+
+body.public-template-active .main-menu > ul > li:hover > a::after {
+    transform: rotate(180deg);
+}
+
+body.public-template-active .main-menu .submenu li a {
+    font-family: 'Inter', var(--rs-ff-body), var(--font-sans);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.45;
+}
+
+body.public-template-active .mean-container .mean-nav ul li.public-nav-mobile-only {
+    display: block;
 }
 
 body.public-template-active

@@ -37,10 +37,14 @@ const resolvedHeaderVariant = computed<PublicHeaderVariant>(() => {
         return props.headerVariant;
     }
 
-    return page.component.startsWith('Public/News/') ||
-        page.component.startsWith('Public/Events/Show') ||
+    return page.component.startsWith('Public/About/') ||
+        page.component.startsWith('Public/Admissions/') ||
+        page.component.startsWith('Public/Alumni/') ||
+        page.component.startsWith('Public/Departments/') ||
+        page.component.startsWith('Public/Events/') ||
         page.component.startsWith('Public/Faculties/') ||
-        page.component.startsWith('Public/Departments/')
+        page.component.startsWith('Public/News/') ||
+        page.component.startsWith('Public/ServiceUnits/')
         ? 'overlay'
         : 'standard';
 });

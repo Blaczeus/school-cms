@@ -6,6 +6,7 @@ defineProps<{
 }>();
 
 const stylesheets = [
+    'https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Prata&display=swap',
     '/public-site/css/vendor/bootstrap.min.css',
     '/public-site/css/vendor/animate.min.css',
     '/public-site/css/plugins/swiper.min.css',

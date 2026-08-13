@@ -20,11 +20,10 @@ export const publicTopLinks: PublicNavItem[] = [
     { label: 'Academics' },
     { label: 'Admissions' },
     { label: 'Campus Life' },
-    { label: 'News' },
+    { label: 'Resources' },
 ];
 
 export const publicNavigation: PublicNavItem[] = [
-    { label: 'Home', href: '/' },
     {
         label: 'About',
         items: [
@@ -52,17 +51,22 @@ export const publicNavigation: PublicNavItem[] = [
         ],
     },
     {
-        label: 'Campus',
+        label: 'Campus Life',
         items: [
             { label: 'Campus Life' },
             { label: 'Events', href: '/events' },
-            { label: 'Library' },
             { label: 'Gallery' },
         ],
     },
-    { label: 'Service Units', href: '/service-units' },
+    {
+        label: 'Resources',
+        items: [
+            { label: 'Service Units', href: '/service-units' },
+            { label: 'Library' },
+            { label: 'Contact' },
+        ],
+    },
     { label: 'News', href: '/news' },
-    { label: 'Contact' },
 ];
 
 export const footerCampusLinks: PublicNavItem[] = [
