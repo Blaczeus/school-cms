@@ -1,6 +1,7 @@
 export type PublicNavItem = {
     label: string;
     href?: string;
+    activeMatch?: 'exact' | 'section';
     items?: PublicNavItem[];
 };
 
@@ -44,10 +45,10 @@ export const publicNavigation: PublicNavItem[] = [
     {
         label: 'Admissions',
         items: [
-            { label: 'How to Apply' },
-            { label: 'Admission Requirements' },
-            { label: 'Tuition and Fees' },
-            { label: 'Scholarships and Financial Aid' },
+            { label: 'Admissions Overview', href: '/admissions', activeMatch: 'exact' },
+            { label: 'How to Apply', href: '/admissions/how-to-apply' },
+            { label: 'Admission Requirements', href: '/admissions/requirements' },
+            { label: 'Tuition & Fees', href: '/admissions/tuition-and-fees' },
         ],
     },
     {
@@ -77,5 +78,5 @@ export const footerUsefulLinks: PublicNavItem[] = [
     { label: 'Programmes' },
     { label: 'Campus Events', href: '/events' },
     { label: 'News', href: '/news' },
-    { label: 'How to Apply' },
+    { label: 'How to Apply', href: '/admissions/how-to-apply' },
 ];

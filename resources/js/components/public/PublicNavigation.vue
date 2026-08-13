@@ -14,7 +14,7 @@ const currentPath = computed(() => page.url.split('?')[0] || '/');
 
 const normalizePath = (href: string) => (href === '/' ? href : href.replace(/\/$/, ''));
 
-const isHrefActive = (href?: string) => {
+const isHrefActive = (href?: string, activeMatch: PublicNavItem['activeMatch'] = 'section') => {
     if (!href) {
         return false;
     }
@@ -26,11 +26,11 @@ const isHrefActive = (href?: string) => {
         return current === '/';
     }
 
-    return current === target || current.startsWith(`${target}/`);
+    return activeMatch === 'exact' ? current === target : current === target || current.startsWith(`${target}/`);
 };
 
 const isItemActive = (item: PublicNavItem): boolean =>
-    isHrefActive(item.href) || Boolean(item.items?.some((child) => isItemActive(child)));
+    isHrefActive(item.href, item.activeMatch) || Boolean(item.items?.some((child) => isItemActive(child)));
 </script>
 
 <template>
@@ -41,7 +41,7 @@ const isItemActive = (item: PublicNavItem): boolean =>
                 :key="item.label"
                 :class="{ 'menu-item-has-children': item.items, active: isItemActive(item) }"
             >
-                <Link v-if="item.href" :href="item.href" :class="{ active: isHrefActive(item.href) }">
+                <Link v-if="item.href" :href="item.href" :class="{ active: isHrefActive(item.href, item.activeMatch) }">
                     {{ item.label }}
                 </Link>
                 <a
@@ -55,7 +55,7 @@ const isItemActive = (item: PublicNavItem): boolean =>
                 </a>
                 <ul v-if="item.items" class="submenu last-children">
                     <li v-for="child in item.items" :key="child.label" :class="{ active: isItemActive(child) }">
-                        <Link v-if="child.href" :href="child.href" :class="{ active: isHrefActive(child.href) }">
+                        <Link v-if="child.href" :href="child.href" :class="{ active: isHrefActive(child.href, child.activeMatch) }">
                             {{ child.label }}
                         </Link>
                         <a

@@ -1507,6 +1507,784 @@ body.public-template-active .public-service-units-page .rs-btn.has-bg-white.hove
     fill: var(--rs-white);
 }
 
+body.public-template-active .public-admissions-page .has-theme-red,
+body.public-template-active .public-admissions-page .section-subtitle.has-theme-red,
+body.public-template-active .public-admissions-page .section-title.has-theme-red,
+body.public-template-active .public-admissions-page .rs-admission-one .rs-admission-title,
+body.public-template-active .public-admissions-page .rs-scholarships-three .rs-scholarships-title {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-admissions-page .section-subtitle.has-theme-red i {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-admissions-page .rs-btn.has-theme-red {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-admissions-page .rs-btn.has-theme-red .btn-text-wrap span,
+body.public-template-active .public-admissions-page .rs-btn.has-theme-red .icon-box {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-admissions-page .rs-btn.has-theme-red svg path {
+    fill: var(--rs-white);
+}
+
+body.public-template-active .public-admissions-page .rs-btn.has-theme-red.hover-black:hover {
+    background: var(--rs-bg-black);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-admissions-page .rs-btn.has-bg-white.hover-red:hover {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-admissions-page .rs-btn.has-bg-white.hover-red:hover .btn-text-wrap span,
+body.public-template-active .public-admissions-page .rs-btn.has-bg-white.hover-red:hover .icon-box {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-admissions-page .rs-btn.has-bg-white.hover-red:hover .icon-box svg path,
+body.public-template-active .public-admission-requirements-page .rs-btn.has-bg-white.hover-red:hover .icon-box svg path,
+body.public-template-active .public-tuition-fees-page .rs-btn.has-bg-white.hover-red:hover .icon-box svg path {
+    fill: var(--rs-white);
+}
+
+body.public-template-active .public-admissions-page .public-admissions-actions,
+body.public-template-active .public-admissions-page .public-admissions-cta-actions,
+body.public-template-active .public-how-to-apply-page .public-admissions-cta-actions,
+body.public-template-active .public-admission-requirements-page .public-admissions-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-pathways {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-pathways .section-desc {
+    max-width: 760px;
+    margin-inline: auto;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-pathways .rs-admission-wrapper {
+    align-items: stretch;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-pathways .rs-admission-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-pathways .rs-admission-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-pathways .rs-admission-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-pathways .rs-admission-desc {
+    flex: 1;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-pathways .rs-admission-thumb img {
+    aspect-ratio: 1.35 / 1;
+    object-fit: cover;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-process {
+    background: var(--rs-white);
+}
+
+body.public-template-active .public-admissions-page .public-admissions-process .rs-progress-wrapper {
+    align-items: flex-start;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-process .rs-process-content-wrapper {
+    width: 100%;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-process .rs-process-item {
+    position: relative;
+    top: auto;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-process .rs-process-title {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-admissions-page .public-admissions-process .rs-process-content {
+    background: var(--rs-bg-primary);
+}
+
+body.public-template-active .public-admissions-page .public-admissions-process .rs-process-desc {
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-admissions-page .public-admissions-process .rs-process-inner::before {
+    background-color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-admissions-page .public-admissions-process .rs-process-inner::after {
+    background-color: color-mix(in srgb, var(--rs-theme-red) 22%, transparent);
+}
+
+body.public-template-active .public-admissions-page .public-admissions-process-btn,
+body.public-template-active .public-admissions-page .public-admissions-preview-btn {
+    margin-top: 30px;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-requirements {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--rs-bg-primary);
+}
+
+body.public-template-active .public-admissions-page .public-admissions-requirements .rs-requirement-wrapper {
+    display: block;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-requirements .rs-scholarships-wrapper {
+    display: block;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-requirements .rs-scholarships-item-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+body.public-template-active .public-admissions-page .public-admissions-requirements .rs-scholarships-item {
+    height: 100%;
+    background: var(--rs-white);
+}
+
+body.public-template-active .public-admissions-page .public-admissions-requirements .rs-scholarships-list::before {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active .public-admissions-page .public-admissions-tuition .rs-tuition-wrapper {
+    background: var(--rs-white);
+}
+
+body.public-template-active .public-admissions-page .public-admissions-finance-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 24px 0 30px;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-finance-list span {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 14px;
+    border: 1px solid color-mix(in srgb, var(--rs-theme-red) 24%, transparent);
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--rs-theme-red) 8%, var(--rs-white));
+    color: var(--rs-theme-red);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-cta .rs-cta-two {
+    max-width: 860px;
+    min-height: 360px;
+    margin: 0 auto;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-cta .rs-cta-title,
+body.public-template-active .public-admissions-page .public-admissions-cta-desc {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-admissions-page .public-admissions-cta-desc {
+    max-width: 620px;
+    margin: 0 auto 25px;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-resources {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--rs-bg-primary);
+}
+
+body.public-template-active .public-admissions-section-heading,
+body.public-template-active .public-admissions-page .public-admissions-resources-title {
+    max-width: 820px;
+    margin-bottom: 45px;
+}
+
+body.public-template-active .public-admissions-page .public-admissions-resources-title {
+    margin-inline: auto;
+}
+
+body.public-template-active .public-admissions-resource-grid,
+body.public-template-active .public-admissions-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+body.public-template-active .public-admissions-resource-card,
+body.public-template-active .public-admissions-info-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 34px 30px;
+    border-radius: 8px;
+    background: var(--rs-white);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.05);
+}
+
+body.public-template-active .public-admissions-resource-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    margin-bottom: 22px;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--rs-theme-red) 10%, var(--rs-white));
+    color: var(--rs-theme-red);
+    font-size: 26px;
+}
+
+body.public-template-active .public-admissions-resource-card h3,
+body.public-template-active .public-admissions-info-card h3,
+body.public-template-active .public-admissions-callout-card h3 {
+    margin-bottom: 12px;
+    color: var(--rs-title-primary);
+    font-size: 24px;
+}
+
+body.public-template-active .public-admissions-resource-card p,
+body.public-template-active .public-admissions-info-card p,
+body.public-template-active .public-admissions-callout-card p {
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-admissions-resource-card p,
+body.public-template-active .public-admissions-info-card p {
+    flex: 1;
+}
+
+body.public-template-active .public-admissions-resource-card a,
+body.public-template-active .public-admissions-subtle-link a,
+body.public-template-active .public-admissions-inline-link {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    color: var(--rs-theme-red);
+    font-weight: 600;
+}
+
+body.public-template-active .public-admissions-inline-link {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 1199px) {
+    body.public-template-active .public-admissions-page .public-admissions-requirements .rs-scholarships-item-wrapper {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    body.public-template-active .public-admissions-resource-grid,
+    body.public-template-active .public-admissions-card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body.public-template-active .public-admissions-page .public-admissions-pathways {
+        padding-top: 35px;
+        padding-bottom: 55px;
+    }
+
+    body.public-template-active .public-admissions-page .public-admissions-requirements {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    body.public-template-active .public-admissions-page .public-admissions-requirements .rs-scholarships-item-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    body.public-template-active .public-admissions-page .public-admissions-resources {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    body.public-template-active .public-admissions-resource-grid,
+    body.public-template-active .public-admissions-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    body.public-template-active .public-admissions-resource-card,
+    body.public-template-active .public-admissions-info-card {
+        padding: 28px 24px;
+    }
+}
+
+body.public-template-active .public-how-to-apply-page .has-theme-red,
+body.public-template-active .public-how-to-apply-page .section-title.has-theme-red,
+body.public-template-active .public-how-to-apply-page .rs-admission-one .rs-admission-title {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-how-to-apply-page .rs-btn.has-theme-red {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-how-to-apply-page .rs-btn.has-theme-red .btn-text-wrap span,
+body.public-template-active .public-how-to-apply-page .rs-btn.has-theme-red .icon-box,
+body.public-template-active .public-how-to-apply-page .rs-btn.has-theme-red i {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-how-to-apply-page .rs-btn.has-theme-red svg path {
+    fill: var(--rs-white);
+}
+
+body.public-template-active .public-how-to-apply-page .rs-btn.has-theme-red.hover-black:hover {
+    background: var(--rs-bg-black);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-how-to-apply-page .rs-btn[disabled] {
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+body.public-template-active .public-how-to-apply-page .public-how-to-apply-process .rs-process-badge,
+body.public-template-active .public-how-to-apply-page .public-how-to-apply-process .rs-process-title {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active .public-how-to-apply-page .public-how-to-apply-process .rs-process-inner::before {
+    background-color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-how-to-apply-page .public-how-to-apply-process .rs-process-inner::after {
+    background-color: color-mix(in srgb, var(--rs-theme-red) 22%, transparent);
+}
+
+body.public-template-active .public-how-to-apply-page .public-how-to-apply-pathways .section-title-wrapper {
+    margin-bottom: 45px;
+}
+
+body.public-template-active .public-how-to-apply-page .public-how-to-apply-pathways .rs-admission-wrapper {
+    align-items: stretch;
+}
+
+body.public-template-active .public-how-to-apply-page .public-how-to-apply-pathways .rs-admission-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body.public-template-active .public-how-to-apply-page .public-how-to-apply-pathways .rs-admission-content,
+body.public-template-active .public-how-to-apply-page .public-how-to-apply-pathways .rs-admission-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+body.public-template-active .public-how-to-apply-page .public-how-to-apply-pathways .rs-admission-desc {
+    flex: 1;
+}
+
+body.public-template-active .public-how-to-apply-page .public-how-to-apply-pathways .rs-admission-thumb img {
+    aspect-ratio: 1.35 / 1;
+    object-fit: cover;
+}
+
+body.public-template-active .public-how-to-apply-page .public-how-to-apply-prep {
+    background: var(--rs-bg-primary);
+}
+
+body.public-template-active .public-how-to-apply-page .public-how-to-apply-prep .public-admissions-section-heading {
+    margin-inline: auto;
+}
+
+body.public-template-active .public-how-to-apply-page .public-how-to-apply-next .rs-scholarships-wrapper {
+    background: var(--rs-white);
+    padding: 28px 30px;
+    margin-bottom: 30px;
+}
+
+body.public-template-active .public-how-to-apply-page .public-how-to-apply-next-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 24px;
+}
+
+@media only screen and (max-width: 767px) {
+    body.public-template-active .public-how-to-apply-page .public-how-to-apply-next-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+body.public-template-active .public-admission-requirements-page .has-theme-red,
+body.public-template-active .public-admission-requirements-page .section-title.has-theme-red,
+body.public-template-active .public-admission-requirements-page .rs-requirement-title,
+body.public-template-active .public-admission-requirements-page .rs-admission-one .rs-admission-title,
+body.public-template-active .public-admission-requirements-page .rs-scholarships-three .rs-scholarships-title {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-admission-requirements-page .rs-btn.has-theme-red {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-admission-requirements-page .rs-btn.has-theme-red .btn-text-wrap span,
+body.public-template-active .public-admission-requirements-page .rs-btn.has-theme-red .icon-box,
+body.public-template-active .public-admission-requirements-page .rs-btn.has-theme-red i {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-admission-requirements-page .rs-btn.has-theme-red svg path {
+    fill: var(--rs-white);
+}
+
+body.public-template-active .public-admission-requirements-page .rs-btn.has-theme-red.hover-black:hover {
+    background: var(--rs-bg-black);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-admission-requirements-page .rs-btn.has-bg-white.hover-red:hover {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-admission-requirements-page .rs-btn.has-bg-white.hover-red:hover .btn-text-wrap span,
+body.public-template-active .public-admission-requirements-page .rs-btn.has-bg-white.hover-red:hover .icon-box,
+body.public-template-active .public-admission-requirements-page .rs-btn.has-bg-white.hover-red:hover i {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-admission-requirements-page .rs-btn[disabled] {
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-intro .rs-requirement-badge,
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-deadlines .rs-deadline-table-inner thead {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-groups .rs-scholarships-wrapper {
+    background: var(--rs-white);
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-groups .rs-scholarships-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-card-desc {
+    margin-bottom: 16px;
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-groups .rs-scholarships-list::before {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-deadlines .rs-deadline-title {
+    color: var(--rs-title-primary);
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-deadline-desc {
+    max-width: 760px;
+    margin-bottom: 25px;
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-deadlines .rs-deadline-table-inner td {
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-actions .section-desc {
+    max-width: 920px;
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-actions .rs-admission-wrapper {
+    align-items: stretch;
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-actions .rs-admission-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-actions .rs-admission-content,
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-actions .rs-admission-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-actions .rs-admission-desc {
+    flex: 1;
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-actions .rs-admission-thumb img {
+    aspect-ratio: 1.35 / 1;
+    object-fit: cover;
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-callout {
+    padding-top: 55px;
+    padding-bottom: 35px;
+}
+
+body.public-template-active .public-admissions-callout-card {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px 38px;
+    border-radius: 8px;
+    background: var(--rs-white);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.05);
+}
+
+body.public-template-active .public-admissions-callout-card > div {
+    max-width: 760px;
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-cta .rs-cta-two {
+    max-width: 900px;
+    min-height: 360px;
+    margin: 0 auto;
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-cta .rs-cta-title,
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-cta .public-admissions-cta-desc {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-admission-requirements-page .public-admission-requirements-cta .public-admissions-cta-desc {
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+@media only screen and (max-width: 767px) {
+    body.public-template-active .public-admissions-callout-card {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 28px 24px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body.public-template-active .public-admission-requirements-page .public-admission-requirements-intro .rs-requirement-badge {
+        left: 50%;
+        top: 50%;
+    }
+}
+
+body.public-template-active .public-tuition-fees-page .has-theme-red,
+body.public-template-active .public-tuition-fees-page .section-title.has-theme-red,
+body.public-template-active .public-tuition-fees-page .rs-tuition-title,
+body.public-template-active .public-tuition-fees-page .rs-program-cost-title,
+body.public-template-active .public-tuition-fees-page .rs-scholarships-three .rs-scholarships-title {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-tuition-fees-page .rs-btn.has-theme-red {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-tuition-fees-page .rs-btn.has-theme-red .btn-text-wrap span,
+body.public-template-active .public-tuition-fees-page .rs-btn.has-theme-red .icon-box,
+body.public-template-active .public-tuition-fees-page .rs-btn.has-theme-red i {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-tuition-fees-page .rs-btn.has-theme-red.hover-black:hover {
+    background: var(--rs-bg-black);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-tuition-fees-page .rs-btn.has-bg-white.hover-red:hover {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-tuition-fees-page .rs-btn.has-bg-white.hover-red:hover .btn-text-wrap span,
+body.public-template-active .public-tuition-fees-page .rs-btn.has-bg-white.hover-red:hover .icon-box,
+body.public-template-active .public-tuition-fees-page .rs-btn.has-bg-white.hover-red:hover i {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-actions,
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+body.public-template-active .public-tuition-fees-page .rs-tuition-three .rs-tuition-tab-wrapper .nav-link.active,
+body.public-template-active .public-tuition-fees-page .rs-tuition-three .rs-tuition-tab-wrapper .nav-link:hover {
+    color: var(--rs-theme-red);
+    border-color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-tuition-fees-page .rs-tuition-three .rs-tuition-tab-wrapper .nav-link.active .rs-tuition-tab-icon,
+body.public-template-active .public-tuition-fees-page .rs-tuition-three .rs-tuition-tab-wrapper .nav-link:hover .rs-tuition-tab-icon {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-tuition-fees-page .rs-tuition-three .rs-tuition-table-inner thead,
+body.public-template-active .public-tuition-fees-page .rs-process-two .rs-process-table-inner thead {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active .public-tuition-fees-page .public-admissions-notice,
+body.public-template-active .public-tuition-fees-page .public-admissions-warning {
+    padding: 14px 18px;
+    margin: 22px 0 28px;
+    border-inline-start: 4px solid var(--rs-theme-red);
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--rs-theme-red) 8%, var(--rs-white));
+    color: var(--rs-title-primary);
+    font-weight: 600;
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-tab-intro {
+    max-width: 920px;
+    margin-bottom: 24px;
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-empty-state {
+    padding: 34px 24px;
+    color: var(--rs-text-primary);
+    text-align: center;
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-budget {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-cost {
+    padding-top: 30px;
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-costs {
+    background: var(--rs-bg-primary);
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-costs .public-admissions-section-heading {
+    margin-inline: auto;
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-cost-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-aid-desc {
+    max-width: 860px;
+    margin-bottom: 30px;
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-aid .rs-scholarships-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-aid-card-desc {
+    margin-bottom: 14px;
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-aid .rs-scholarships-list::before {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-payment-card {
+    display: block;
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-payment-card > div {
+    max-width: 900px;
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-programme-link {
+    text-align: center;
+}
+
+body.public-template-active .public-admissions-subtle-link {
+    display: inline-flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 20px;
+    border: 1px solid color-mix(in srgb, var(--rs-theme-red) 20%, transparent);
+    border-radius: 999px;
+    background: var(--rs-white);
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-cta .rs-cta-two {
+    max-width: 900px;
+    min-height: 360px;
+    margin: 0 auto;
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-cta .rs-cta-title,
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-cta-desc,
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-cta .section-subtitle {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-tuition-fees-page .public-tuition-fees-cta-desc {
+    max-width: 620px;
+    margin: 0 auto 25px;
+}
+
+@media only screen and (max-width: 767px) {
+    body.public-template-active .public-tuition-fees-page .rs-tuition-three .rs-tuition-tab-wrapper .nav-pills {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    body.public-template-active .public-tuition-fees-page .public-tuition-fees-cost-grid {
+        grid-template-columns: 1fr;
+    }
+
+    body.public-template-active .public-admissions-subtle-link {
+        align-items: flex-start;
+        flex-direction: column;
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    body.public-template-active .public-tuition-fees-page .public-tuition-fees-cost-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 body.public-template-active .public-service-unit-details-page .has-theme-red,
 body.public-template-active .public-service-unit-details-page .section-subtitle.has-theme-red,
 body.public-template-active .public-service-unit-details-page .section-title.has-theme-red,
