@@ -14344,7 +14344,7 @@ html.lenis body {
 .rs-cta-two .rs-cta-content {
     position: relative;
     z-index: 2;
-    text-align: center;
+    text-align: start;
 }
 .rs-cta-two .rs-cta-icon {
     width: 88px;

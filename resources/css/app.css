@@ -2572,6 +2572,312 @@ body.public-template-active .public-service-unit-details-page .rs-btn.has-bg-whi
     fill: var(--rs-white);
 }
 
+body.public-template-active .public-campus-page .has-theme-red,
+body.public-template-active .public-campus-page .section-title.has-theme-red,
+body.public-template-active .public-campus-page .section-subtitle.has-theme-red,
+body.public-template-active .public-campus-page .rs-event-title a:hover {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-campus-page .section-subtitle.has-theme-red i {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-campus-page .rs-btn.has-theme-red {
+    background: var(--rs-theme-red);
+    border-color: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-campus-page .rs-btn.has-theme-red .btn-text-wrap span,
+body.public-template-active .public-campus-page .rs-btn.has-theme-red .icon-box {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-campus-page .rs-btn.has-theme-red .icon-box svg path {
+    fill: var(--rs-white);
+}
+
+body.public-template-active .public-campus-page .rs-btn.has-theme-red.hover-black:hover {
+    background: var(--rs-bg-black);
+    border-color: var(--rs-bg-black);
+}
+
+body.public-template-active .public-campus-page .public-campus-intro-thumb {
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+body.public-template-active .public-campus-page .public-campus-intro-thumb img,
+body.public-template-active .public-campus-page .public-campus-map-visual img {
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    object-fit: cover;
+}
+
+body.public-template-active .public-campus-page .public-campus-experiences .rs-campus-life-wrapper {
+    align-items: stretch;
+}
+
+body.public-template-active .public-campus-page .public-campus-experiences .rs-campus-life-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body.public-template-active .public-campus-page .public-campus-experiences .rs-campus-life-desc {
+    flex: 1;
+}
+
+body.public-template-active .public-campus-page .public-campus-experiences .rs-campus-life-thumb {
+    margin-top: auto;
+}
+
+body.public-template-active .public-campus-page .public-campus-experiences .rs-campus-life-thumb img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+body.public-template-active .public-campus-page .public-campus-info .rs-counter-wrapper {
+    align-items: stretch;
+}
+
+body.public-template-active .public-campus-page .public-campus-info .rs-counter-item {
+    height: auto;
+}
+
+body.public-template-active .public-campus-page .public-campus-info .rs-counter-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body.public-template-active .public-campus-page .public-campus-info-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--rs-theme-red) 12%, transparent);
+    color: var(--rs-theme-red);
+    font-size: 34px;
+    line-height: 1;
+}
+
+body.public-template-active .public-campus-page .public-campus-info-icon i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+}
+
+body.public-template-active .public-campus-page .public-campus-video-placeholder {
+    cursor: not-allowed;
+}
+
+body.public-template-active .public-campus-page .public-campus-video-placeholder:disabled {
+    opacity: 0.86;
+}
+
+body.public-template-active .public-campus-page .public-campus-visual .section-desc {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+body.public-template-active .public-campus-page .public-campus-events .rs-event-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+body.public-template-active .public-campus-page .public-campus-events .rs-event-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body.public-template-active .public-campus-page .public-campus-events .rs-event-thumb img,
+body.public-template-active .public-campus-page .public-campus-gallery-preview .rs-gallery-thumb img {
+    width: 100%;
+    object-fit: cover;
+}
+
+body.public-template-active .public-campus-page .public-campus-events .rs-event-thumb img {
+    aspect-ratio: 16 / 11;
+}
+
+body.public-template-active .public-campus-page .public-campus-events .rs-event-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+body.public-template-active .public-campus-page .public-campus-events .rs-event-title {
+    min-height: 70px;
+}
+
+body.public-template-active .public-campus-page .public-campus-events .rs-event-btn {
+    margin-top: auto;
+}
+
+body.public-template-active .public-campus-page .public-campus-events .rs-event-tag,
+body.public-template-active .public-campus-page .public-campus-events .rs-event-btn .rs-btn:hover {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-campus-page .public-campus-gallery-preview .rs-gallery-thumb img {
+    aspect-ratio: 4 / 3;
+}
+
+body.public-template-active .public-campus-page .public-campus-gallery-preview .section-title-wrapper {
+    text-align: center;
+}
+
+body.public-template-active .public-campus-page .public-campus-gallery-preview .section-subtitle {
+    display: inline-flex;
+    justify-content: center;
+}
+
+body.public-template-active .public-campus-page .public-campus-map .rs-map-wrapper {
+    margin: 0;
+}
+
+body.public-template-active .public-campus-page .public-campus-location-placeholder,
+body.public-template-active .public-campus-page .public-campus-address {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 12px;
+    align-items: flex-start;
+    margin-top: 24px;
+    padding: 18px 20px;
+    border-left: 4px solid var(--rs-theme-red);
+    background: var(--rs-white);
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-campus-page .public-campus-location-icon {
+    color: var(--rs-theme-red);
+    font-size: 24px;
+    line-height: 1;
+}
+
+body.public-template-active .public-campus-page .public-campus-location-copy {
+    display: grid;
+    gap: 4px;
+    min-width: 0;
+    line-height: 1.5;
+}
+
+body.public-template-active .public-campus-page .public-campus-location-copy strong {
+    color: var(--rs-title-primary);
+    font-weight: 700;
+}
+
+body.public-template-active .public-campus-page .public-campus-location-copy span {
+    overflow-wrap: anywhere;
+}
+
+body.public-template-active .public-campus-page .public-campus-map-visual {
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+body.public-template-active .public-campus-page .public-campus-final-cta .rs-cta-wrapper {
+    padding: 70px 0;
+}
+
+body.public-template-active .public-campus-page .public-campus-final-cta .rs-cta-content {
+    text-align: start;
+}
+
+body.public-template-active .public-campus-page .public-campus-final-cta .section-subtitle {
+    display: inline-flex;
+    justify-content: center;
+}
+
+body.public-template-active .public-campus-page .public-campus-final-cta .section-subtitle,
+body.public-template-active .public-campus-page .public-campus-final-cta .section-subtitle i,
+body.public-template-active .public-campus-page .public-campus-final-cta .rs-cta-title {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-campus-page .public-campus-final-cta .rs-cta-desc {
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-campus-page .public-campus-resource-links {
+    display: grid;
+    gap: 16px;
+}
+
+body.public-template-active .public-campus-page .public-campus-resource-link {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-radius: 12px;
+    background: var(--rs-white);
+    color: var(--rs-title-primary);
+    transition:
+        background-color 0.25s ease,
+        box-shadow 0.25s ease,
+        color 0.25s ease;
+}
+
+body.public-template-active .public-campus-page .public-campus-resource-link strong,
+body.public-template-active .public-campus-page .public-campus-resource-link small {
+    display: block;
+    transition: color 0.25s ease;
+}
+
+body.public-template-active .public-campus-page .public-campus-resource-link small {
+    margin-top: 4px;
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-campus-page .public-campus-resource-link i {
+    flex: 0 0 auto;
+    color: var(--rs-theme-red);
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+body.public-template-active .public-campus-page .public-campus-resource-link:hover,
+body.public-template-active .public-campus-page .public-campus-resource-link:focus-visible {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+    box-shadow: 0 12px 28px color-mix(in srgb, var(--rs-theme-red) 22%, transparent);
+    outline: 0;
+}
+
+body.public-template-active .public-campus-page .public-campus-resource-link:hover strong,
+body.public-template-active .public-campus-page .public-campus-resource-link:hover small,
+body.public-template-active .public-campus-page .public-campus-resource-link:hover i,
+body.public-template-active .public-campus-page .public-campus-resource-link:focus-visible strong,
+body.public-template-active .public-campus-page .public-campus-resource-link:focus-visible small,
+body.public-template-active .public-campus-page .public-campus-resource-link:focus-visible i {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-campus-page .public-campus-resource-link:focus-visible {
+    box-shadow:
+        0 0 0 3px var(--rs-white),
+        0 0 0 6px color-mix(in srgb, var(--rs-theme-red) 55%, transparent);
+}
+
+body.public-template-active .public-campus-page .public-campus-resource-link:hover i,
+body.public-template-active .public-campus-page .public-campus-resource-link:focus-visible i {
+    transform: translate(4px, -4px);
+}
+
 @media only screen and (max-width: 1199px) {
     body.public-template-active .public-service-unit-details-page .public-service-unit-detail-section,
     body.public-template-active .public-service-unit-details-page .public-service-unit-access-process,
@@ -2603,6 +2909,10 @@ body.public-template-active .public-service-unit-details-page .rs-btn.has-bg-whi
     body.public-template-active .public-events-page .public-events-listing .rs-event-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    body.public-template-active .public-campus-page .public-campus-events .rs-event-wrapper {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -2612,6 +2922,23 @@ body.public-template-active .public-service-unit-details-page .rs-btn.has-bg-whi
 
     body.public-template-active .public-events-page .public-events-listing .rs-event-title {
         min-height: unset;
+    }
+
+    body.public-template-active .public-campus-page .public-campus-events .rs-event-wrapper {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    body.public-template-active .public-campus-page .public-campus-events .rs-event-title {
+        min-height: unset;
+    }
+
+    body.public-template-active .public-campus-page .public-campus-intro-thumb img,
+    body.public-template-active .public-campus-page .public-campus-map-visual img {
+        min-height: 260px;
+    }
+
+    body.public-template-active .public-campus-page .public-campus-final-cta .rs-cta-wrapper {
+        padding: 50px 0;
     }
 }
 

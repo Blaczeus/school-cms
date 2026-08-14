@@ -9,6 +9,7 @@ Route::inertia('/admissions', 'Public/Admissions/Index')->name('admissions.index
 Route::inertia('/admissions/how-to-apply', 'Public/Admissions/HowToApply')->name('admissions.how-to-apply');
 Route::inertia('/admissions/requirements', 'Public/Admissions/Requirements')->name('admissions.requirements');
 Route::inertia('/admissions/tuition-and-fees', 'Public/Admissions/TuitionAndFees')->name('admissions.tuition-and-fees');
+Route::inertia('/campus', 'Public/Campus/Index')->name('campus.index');
 Route::inertia('/alumni', 'Public/Alumni/Index')->name('alumni.index');
 Route::get('/alumni/{slug}', function (string $slug) {
     abort_unless(in_array($slug, [
