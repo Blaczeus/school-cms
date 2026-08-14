@@ -2878,6 +2878,161 @@ body.public-template-active .public-campus-page .public-campus-resource-link:foc
     transform: translate(4px, -4px);
 }
 
+body.public-template-active .public-contact-page .section-intro {
+    margin-top: 18px;
+}
+
+body.public-template-active .public-contact-page .rs-contact-five .rs-contact-wrapper {
+    align-items: stretch;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+body.public-template-active .public-contact-page .rs-contact-five .rs-contact-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body.public-template-active .public-contact-page .rs-contact-five .rs-contact-item p {
+    margin-bottom: 20px;
+}
+
+body.public-template-active .public-contact-page .rs-contact-five .rs-contact-links {
+    margin-top: auto;
+}
+
+body.public-template-active .public-contact-page .rs-contact-five .rs-contact-links span {
+    display: block;
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-contact-page .public-contact-card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rs-theme-red);
+    font-size: 58px;
+    line-height: 1;
+}
+
+body.public-template-active .public-contact-page .public-contact-support-card {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 24px;
+    align-items: flex-start;
+    height: 100%;
+    padding: 35px;
+    border-radius: 10px;
+    background: var(--rs-white);
+}
+
+body.public-template-active .public-contact-page .public-contact-support .section-title-wrapper {
+    margin-bottom: 28px;
+}
+
+body.public-template-active .public-contact-page .public-contact-support-card h4 {
+    margin-bottom: 12px;
+}
+
+body.public-template-active .public-contact-page .public-contact-support-card p {
+    margin-bottom: 24px;
+}
+
+body.public-template-active .public-contact-page .public-contact-support-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--rs-theme-red) 12%, transparent);
+    color: var(--rs-theme-red);
+    font-size: 34px;
+    line-height: 1;
+}
+
+body.public-template-active .public-contact-page .public-contact-form .rs-contact-input {
+    margin-bottom: 0;
+}
+
+body.public-template-active .public-contact-page .public-contact-form input,
+body.public-template-active .public-contact-page .public-contact-form textarea {
+    color: color-mix(in srgb, var(--rs-white) 94%, var(--rs-title-primary));
+}
+
+body.public-template-active .public-contact-page .public-contact-form input::placeholder,
+body.public-template-active .public-contact-page .public-contact-form textarea::placeholder {
+    color: color-mix(in srgb, var(--rs-white) 66%, transparent);
+}
+
+body.public-template-active .public-contact-page .public-contact-form .rs-form-check label {
+    color: color-mix(in srgb, var(--rs-white) 82%, transparent);
+}
+
+body.public-template-active .public-contact-page .public-contact-form input[aria-invalid='true'],
+body.public-template-active .public-contact-page .public-contact-form textarea[aria-invalid='true'] {
+    border-color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-contact-page .public-contact-form-error {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: color-mix(in srgb, var(--rs-theme-red) 32%, var(--rs-white));
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+body.public-template-active .public-contact-page .public-contact-form-status {
+    margin-bottom: 20px;
+    padding: 14px 18px;
+    border-left: 4px solid var(--rs-theme-red);
+    background: color-mix(in srgb, var(--rs-theme-red) 8%, var(--rs-white));
+    color: var(--rs-title-primary);
+}
+
+body.public-template-active .public-contact-page .public-contact-location-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 360px;
+    padding: 45px;
+    border-radius: 10px;
+    background:
+        linear-gradient(color-mix(in srgb, var(--rs-theme-red) 84%, transparent), color-mix(in srgb, var(--rs-theme-red) 84%, transparent)),
+        url('/public-site/images/bg/breadcrumb-bg-thumb-01.webp') center / cover no-repeat;
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-contact-page .public-contact-location-card .section-subtitle {
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+body.public-template-active .public-contact-page .public-contact-location-card .section-subtitle i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--rs-white) 18%, transparent);
+    font-size: 28px;
+}
+
+body.public-template-active .public-contact-page .public-contact-location-card .section-subtitle,
+body.public-template-active .public-contact-page .public-contact-location-card .section-subtitle i,
+body.public-template-active .public-contact-page .public-contact-location-card h3,
+body.public-template-active .public-contact-page .public-contact-location-card p,
+body.public-template-active .public-contact-page .public-contact-location-card address {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-contact-page .public-contact-location-card address {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-style: normal;
+}
+
 @media only screen and (max-width: 1199px) {
     body.public-template-active .public-service-unit-details-page .public-service-unit-detail-section,
     body.public-template-active .public-service-unit-details-page .public-service-unit-access-process,
@@ -2887,12 +3042,33 @@ body.public-template-active .public-campus-page .public-campus-resource-link:foc
 }
 
 @media only screen and (max-width: 991px) {
+    body.public-template-active .public-contact-page .rs-contact-five .rs-contact-wrapper {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    body.public-template-active .public-contact-page .public-contact-location-card {
+        min-height: 320px;
+    }
+
     body.public-template-active .public-service-unit-details-page .public-service-unit-sidebar {
         margin-top: 10px;
     }
 }
 
 @media only screen and (max-width: 767px) {
+    body.public-template-active .public-contact-page .rs-contact-five .rs-contact-wrapper {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    body.public-template-active .public-contact-page .public-contact-support-card {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    body.public-template-active .public-contact-page .public-contact-location-card {
+        min-height: 300px;
+        padding: 35px 25px;
+    }
+
     body.public-template-active .public-service-unit-details-page .public-service-unit-detail-section,
     body.public-template-active .public-service-unit-details-page .public-service-unit-access-process,
     body.public-template-active .public-service-unit-details-page .public-service-unit-downloads {

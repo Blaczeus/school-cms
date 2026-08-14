@@ -55,7 +55,7 @@ export const publicNavigation: PublicNavItem[] = [
         items: [
             { label: 'Campus Life', href: '/campus' },
             { label: 'Events', href: '/events' },
-            { label: 'Gallery' },
+            // { label: 'Gallery' },
         ],
     },
     {
@@ -63,7 +63,7 @@ export const publicNavigation: PublicNavItem[] = [
         items: [
             { label: 'Service Units', href: '/service-units' },
             { label: 'Library' },
-            { label: 'Contact' },
+            { label: 'Contact', href: '/contact' },
         ],
     },
     { label: 'News', href: '/news' },

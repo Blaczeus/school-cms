@@ -41,6 +41,7 @@ const resolvedHeaderVariant = computed<PublicHeaderVariant>(() => {
         page.component.startsWith('Public/Admissions/') ||
         page.component.startsWith('Public/Alumni/') ||
         page.component.startsWith('Public/Campus/') ||
+        page.component.startsWith('Public/Contact/') ||
         page.component.startsWith('Public/Departments/') ||
         page.component.startsWith('Public/Events/') ||
         page.component.startsWith('Public/Faculties/') ||

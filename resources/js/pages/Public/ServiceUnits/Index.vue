@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Link } from '@inertiajs/vue3';
 import PublicBreadcrumb from '@/components/public/PublicBreadcrumb.vue';
 import ServiceUnitListing from '@/components/public/service-units/ServiceUnitListing.vue';
 import { serviceUnits as serviceUnitData } from '@/data/serviceUnits';
@@ -152,12 +153,12 @@ const accessSteps = [
                             office best suited to your request.
                         </p>
                         <div class="rs-cta-btn">
-                            <button type="button" class="rs-btn has-icon has-bg-white hover-red" disabled>
+                            <Link class="rs-btn has-icon has-bg-white hover-red" href="/contact">
                                 <span class="btn-text-wrap">
-                                    <span class="text-default">Contact Page Coming Soon</span>
-                                    <span class="text-hover">Contact Page Coming Soon</span>
+                                    <span class="text-default">Contact the University</span>
+                                    <span class="text-hover">Contact the University</span>
                                 </span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
