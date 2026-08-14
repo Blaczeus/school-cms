@@ -3033,6 +3033,207 @@ body.public-template-active .public-contact-page .public-contact-location-card a
     font-style: normal;
 }
 
+body.public-template-active .public-library-page .section-intro {
+    margin-top: 16px;
+}
+
+body.public-template-active .public-library-page .public-library-intro p {
+    max-width: 920px;
+}
+
+body.public-template-active .public-library-page .public-library-highlight-label {
+    color: var(--rs-theme-red);
+    font-size: 44px;
+    line-height: 1;
+}
+
+body.public-template-active .public-library-page .public-library-featured-thumb .rs-thumb img {
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+}
+
+body.public-template-active .public-library-page .rs-libraries-one .rs-libraries-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body.public-template-active .public-library-page .rs-libraries-one .rs-libraries-thumb img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+body.public-template-active .public-library-page .rs-libraries-one .rs-libraries-title {
+    color: var(--rs-title-primary);
+}
+
+body.public-template-active .public-library-page .rs-libraries-one .rs-libraries-desc {
+    margin-bottom: 0;
+}
+
+body.public-template-active .public-library-page .public-library-digital .section-title-wrapper {
+    margin-bottom: 35px;
+}
+
+body.public-template-active .public-library-page .public-library-digital-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body.public-template-active .public-library-page .public-library-digital-meta {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+body.public-template-active .public-library-page .public-library-digital-meta span:last-child {
+    color: var(--rs-theme-red);
+    font-weight: 700;
+}
+
+body.public-template-active .public-library-page .public-library-digital-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--rs-theme-red) 12%, transparent);
+    color: var(--rs-theme-red);
+    font-size: 19px;
+    line-height: 1;
+}
+
+body.public-template-active .public-library-page .public-library-digital-card small {
+    display: block;
+    margin-top: 24px;
+    color: color-mix(in srgb, var(--rs-text-primary) 86%, transparent);
+    line-height: 1.5;
+}
+
+body.public-template-active .public-library-page .public-library-digital-card small::before {
+    display: block;
+    width: 52%;
+    height: 2px;
+    margin-bottom: 18px;
+    background: color-mix(in srgb, var(--rs-theme-red) 58%, transparent);
+    content: '';
+}
+
+body.public-template-active .public-library-page .public-library-study-spaces .rs-campus-life-wrapper {
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+body.public-template-active .public-library-page .public-library-reading-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: 16px;
+    background:
+        linear-gradient(color-mix(in srgb, var(--rs-theme-red) 78%, transparent), color-mix(in srgb, var(--rs-theme-red) 78%, transparent)),
+        url('/public-site/images/bg/video-bg-thumb-03.webp') center / cover no-repeat;
+}
+
+body.public-template-active .public-library-page .public-library-study-spaces .section-subtitle,
+body.public-template-active .public-library-page .public-library-study-spaces .section-subtitle i,
+body.public-template-active .public-library-page .public-library-study-spaces .rs-campus-life-title {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-library-page .public-library-study-spaces .rs-campus-life-title {
+    font-size: clamp(48px, 6vw, 86px);
+    line-height: 1.06;
+}
+
+body.public-template-active .public-library-page .public-library-study-spaces .rs-campus-life-thumb {
+    border-color: var(--rs-white);
+}
+
+body.public-template-active .public-library-page .public-library-study-spaces .rs-campus-life-thumb img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+body.public-template-active .public-library-page .public-library-study-copy {
+    padding: 20px 4px 0;
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-library-page .public-library-study-copy h5,
+body.public-template-active .public-library-page .public-library-study-copy p {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-library-page .public-library-study-copy p {
+    margin-bottom: 0;
+}
+
+body.public-template-active .public-library-page .public-library-access-steps {
+    display: grid;
+    gap: 18px;
+}
+
+body.public-template-active .public-library-page .public-library-access-step,
+body.public-template-active .public-library-page .public-library-visit-card,
+body.public-template-active .public-library-page .public-library-schedule {
+    height: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    background: var(--rs-white);
+}
+
+body.public-template-active .public-library-page .public-library-access-step h5 {
+    margin-bottom: 8px;
+    color: var(--rs-title-primary);
+}
+
+body.public-template-active .public-library-page .public-library-access-step p {
+    margin-bottom: 0;
+}
+
+body.public-template-active .public-library-page .public-library-schedule {
+    display: grid;
+    align-content: center;
+    gap: 14px;
+}
+
+body.public-template-active .public-library-page .public-library-schedule-row {
+    display: grid;
+    gap: 4px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid color-mix(in srgb, var(--rs-theme-red) 18%, transparent);
+}
+
+body.public-template-active .public-library-page .public-library-schedule-row:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+body.public-template-active .public-library-page .public-library-schedule-row strong {
+    color: var(--rs-title-primary);
+}
+
+body.public-template-active .public-library-page .public-library-schedule-row span {
+    color: var(--rs-text-primary);
+}
+
+body.public-template-active .public-library-page .public-library-service-link .rs-cta-bg-thumb::before {
+    background: color-mix(in srgb, var(--rs-black) 58%, transparent);
+}
+
+body.public-template-active .public-library-page .public-library-service-link .rs-cta-title,
+body.public-template-active .public-library-page .public-library-service-link .rs-cta-desc {
+    color: var(--rs-white);
+    text-shadow: 0 1px 2px color-mix(in srgb, var(--rs-black) 55%, transparent);
+}
+
+body.public-template-active .public-library-page .public-library-service-link .rs-cta-desc {
+    color: color-mix(in srgb, var(--rs-white) 92%, transparent);
+}
+
 @media only screen and (max-width: 1199px) {
     body.public-template-active .public-service-unit-details-page .public-service-unit-detail-section,
     body.public-template-active .public-service-unit-details-page .public-service-unit-access-process,

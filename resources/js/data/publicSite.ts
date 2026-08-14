@@ -62,7 +62,7 @@ export const publicNavigation: PublicNavItem[] = [
         label: 'Resources',
         items: [
             { label: 'Service Units', href: '/service-units' },
-            { label: 'Library' },
+            { label: 'Library', href: '/library' },
             { label: 'Contact', href: '/contact' },
         ],
     },
