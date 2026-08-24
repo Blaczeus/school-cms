@@ -31,7 +31,7 @@ const department = computed(
 <template>
     <div class="public-departments-page public-department-details-page bg-primary">
         <PublicBreadcrumb
-            title="Department Details"
+            :title="department.shortName"
             :current="department.shortName"
             :breadcrumbs="[{ label: 'Departments', href: '/departments' }]"
             column-class="col-xl-5 col-lg-10"

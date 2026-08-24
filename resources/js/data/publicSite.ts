@@ -38,7 +38,7 @@ export const publicNavigation: PublicNavItem[] = [
         items: [
             { label: 'Faculties', href: '/faculties' },
             { label: 'Departments', href: '/departments' },
-            { label: 'Courses / Programmes' },
+            { label: 'Programmes', href: '/programmes' },
         ],
     },
     {
@@ -79,7 +79,7 @@ export const footerCampusLinks: PublicNavItem[] = [
 
 export const footerUsefulLinks: PublicNavItem[] = [
     { label: 'Faculties' },
-    { label: 'Programmes' },
+    { label: 'Programmes', href: '/programmes' },
     { label: 'Campus Events', href: '/events' },
     { label: 'News', href: '/news' },
     { label: 'How to Apply', href: '/admissions/how-to-apply' },

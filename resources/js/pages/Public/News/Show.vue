@@ -23,7 +23,7 @@ const article = computed(() => props.article ?? findNewsArticle(props.slug));
 
 <template>
     <PublicBreadcrumb
-        title="News Details"
+        :title="article.title"
         :current="article.title"
         :breadcrumbs="[{ label: 'News', href: '/news' }]"
         :description="article.excerpt"

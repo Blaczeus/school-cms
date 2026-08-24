@@ -62,6 +62,31 @@ Route::get('/service-units/{slug}', function (string $slug) {
         'slug' => $slug,
     ]);
 })->name('service-units.show');
+Route::inertia('/programmes', 'Public/Programmes/Index')->name('programmes.index');
+Route::get('/programmes/{slug}', function (string $slug) {
+    abort_unless(in_array($slug, [
+        'bsc-computer-science',
+        'msc-computer-science',
+        'bsc-software-engineering',
+        'bsc-cybersecurity',
+        'msc-cybersecurity',
+        'beng-electrical-and-electronic-engineering',
+        'beng-civil-engineering',
+        'bsc-business-administration',
+        'mba',
+        'msc-management',
+        'bsc-economics',
+        'msc-economics',
+        'bsc-mass-communication',
+        'bsc-public-health',
+        'master-of-public-health',
+        'bnsc-nursing-science',
+    ], true), 404);
+
+    return Inertia::render('Public/Programmes/Show', [
+        'slug' => $slug,
+    ]);
+})->name('programmes.show');
 Route::inertia('/faculties', 'Public/Faculties/Index')->name('faculties.index');
 Route::inertia('/departments', 'Public/Departments/Index')->name('departments.index');
 Route::get('/departments/{slug}', function (string $slug) {

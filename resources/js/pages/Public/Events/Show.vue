@@ -31,7 +31,7 @@ const event = computed(
 <template>
     <div class="public-events-page public-event-details-page bg-primary">
         <PublicBreadcrumb
-            title="Event Details"
+            :title="event.title"
             :current="event.title"
             :breadcrumbs="[{ label: 'Events', href: '/events' }]"
             column-class="col-xl-5 col-lg-6"

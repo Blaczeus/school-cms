@@ -32,7 +32,7 @@ const unit = computed(
 <template>
     <div class="public-service-units-page public-service-unit-details-page bg-primary">
         <PublicBreadcrumb
-            title="Service Unit Details"
+            :title="unit.name"
             :current="unit.name"
             :breadcrumbs="[{ label: 'Service Units', href: '/service-units' }]"
             column-class="col-xl-5 col-lg-10"

@@ -741,6 +741,640 @@ body.public-template-active .public-departments-page .rs-program-five .rs-progra
     object-fit: cover;
 }
 
+body.public-template-active .public-programmes-page .public-programmes-intro {
+    max-width: 880px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+}
+
+body.public-template-active .public-programmes-page .public-programmes-intro .section-subtitle {
+    justify-content: center;
+}
+
+body.public-template-active .public-programmes-page .public-programmes-intro .description {
+    max-width: 760px;
+    margin-right: auto;
+    margin-top: 18px;
+    margin-left: auto;
+}
+
+body.public-template-active .public-programmes-page .public-programmes-container {
+    max-width: 1240px;
+}
+
+body.public-template-active .public-programmes-page .public-programmes-discovery-row {
+    justify-content: center;
+}
+
+body.public-template-active .public-programmes-page .rs-filter-two .filter-main-title::before {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active .public-programmes-page .rs-filter-two .filter-title,
+body.public-template-active .public-programmes-page .rs-filter-three .rs-result-count,
+body.public-template-active .public-programmes-page .rs-program-five .rs-program-title {
+    color: var(--rs-title-primary);
+}
+
+body.public-template-active .public-programmes-page .public-programme-filter-control {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: 52px;
+    box-sizing: border-box;
+    border: 1px solid var(--rs-border-primary);
+    border-radius: 6px;
+    background-color: var(--rs-white);
+    color: var(--rs-text-primary);
+    padding: 0 44px 0 18px;
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+body.public-template-active .public-programmes-page .public-programme-filter-control:focus {
+    border-color: var(--rs-theme-red);
+    box-shadow: 0 0 0 3px rgb(177 8 42 / 12%);
+}
+
+body.public-template-active .public-programmes-page .public-programme-reset {
+    margin-top: 6px;
+}
+
+body.public-template-active .public-programmes-page .public-programme-results-header {
+    justify-content: flex-start;
+    margin-bottom: 24px;
+}
+
+body.public-template-active .public-programmes-page .rs-program-five .rs-program-item {
+    align-items: stretch;
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 255px);
+    gap: 24px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+body.public-template-active .public-programmes-page .rs-program-five .rs-program-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 18px 0 18px 22px;
+}
+
+body.public-template-active .public-programmes-page .rs-program-five .rs-program-title {
+    min-height: 0;
+    margin-bottom: 0;
+}
+
+body.public-template-active .public-programmes-page .rs-program-five .rs-program-title,
+body.public-template-active .public-programmes-page .rs-program-five .rs-program-desc,
+body.public-template-active .public-programmes-page .rs-program-five .rs-program-tag,
+body.public-template-active .public-programmes-page .public-programme-meta dd {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+body.public-template-active .public-programmes-page .rs-program-five .rs-program-title {
+    -webkit-line-clamp: 2;
+}
+
+body.public-template-active .public-programmes-page .rs-program-five .rs-program-desc {
+    min-height: 0;
+    margin-bottom: 0;
+    -webkit-line-clamp: 2;
+}
+
+body.public-template-active .public-programmes-page .rs-program-five .rs-program-tag,
+body.public-template-active .public-programmes-page .public-programme-meta dd {
+    -webkit-line-clamp: 1;
+}
+
+body.public-template-active .public-programmes-page .public-programme-meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 16px;
+    margin: 18px 0 0;
+}
+
+body.public-template-active .public-programmes-page .public-programme-meta div {
+    min-width: 0;
+}
+
+body.public-template-active .public-programmes-page .public-programme-meta dt {
+    color: var(--rs-theme-red);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+body.public-template-active .public-programmes-page .public-programme-meta dd {
+    color: var(--rs-text-primary);
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+body.public-template-active .public-programmes-page .public-programme-card-action {
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+body.public-template-active .public-programmes-page .rs-program-five .rs-program-thumb {
+    align-self: center;
+    width: 100%;
+    aspect-ratio: 1.18;
+}
+
+body.public-template-active .public-programmes-page .rs-program-five .rs-program-thumb img {
+    height: 100%;
+    object-fit: cover;
+}
+
+body.public-template-active .public-programmes-page .rs-program-five .rs-program-tag-wrapper {
+    margin-top: 14px;
+    margin-bottom: 12px;
+}
+
+body.public-template-active .public-programmes-page .rs-program-five .rs-program-btn .rs-btn {
+    width: auto;
+    min-width: 0;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+body.public-template-active .public-programmes-page .rs-program-five .rs-program-btn .rs-btn .btn-text-wrap span {
+    text-decoration: none;
+}
+
+body.public-template-active .public-programmes-page .public-programme-empty .rs-program-content {
+    min-height: 260px;
+}
+
+body.public-template-active .public-programmes-page .public-programmes-admissions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 40px;
+    padding: 28px 32px;
+    border: 1px solid rgb(177 8 42 / 14%);
+    border-radius: 8px;
+    background: var(--rs-white);
+}
+
+body.public-template-active .public-programmes-page .public-programmes-admissions > div > span {
+    display: inline-block;
+    color: var(--rs-theme-red);
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+body.public-template-active .public-programmes-page .public-programmes-admissions p {
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    body.public-template-active .public-programmes-page .public-programmes-container {
+        max-width: 100%;
+    }
+
+    body.public-template-active .public-programmes-page .rs-program-five .rs-program-item {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    body.public-template-active .public-programmes-page .rs-program-five .rs-program-content {
+        padding: 0 10px 16px;
+    }
+
+    body.public-template-active .public-programmes-page .rs-program-five .rs-program-thumb {
+        aspect-ratio: 1.5;
+    }
+
+    body.public-template-active .public-programmes-page .public-programmes-admissions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    body.public-template-active .public-programmes-page .public-programme-meta {
+        grid-template-columns: 1fr;
+    }
+}
+
+body.public-template-active .public-programme-details-page .rs-program-details .has-theme-red,
+body.public-template-active .public-programme-details-page .rs-program-details .text-red {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-programme-details-page .public-programme-details-summary {
+    margin-bottom: 40px;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-details-summary .description {
+    margin-top: 18px;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-details-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-details-links a,
+body.public-template-active .public-programme-details-page .public-programme-details-links span {
+    color: var(--rs-theme-red);
+    font-weight: 700;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-details-thumb {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-details-thumb img {
+    aspect-ratio: 1.25;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+body.public-template-active
+    .public-programme-details-page
+    .rs-program-details
+    .rs-program-details-tab-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+body.public-template-active
+    .public-programme-details-page
+    .rs-program-details
+    .rs-program-details-tab-wrapper
+    .nav-pills {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    width: min(100%, 860px);
+}
+
+body.public-template-active
+    .public-programme-details-page
+    .rs-program-details
+    .rs-program-details-tab-wrapper
+    .nav-link.active,
+body.public-template-active
+    .public-programme-details-page
+    .rs-program-details
+    .rs-program-details-tab-wrapper
+    .nav-link:hover {
+    background: var(--rs-theme-red);
+    border-color: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active
+    .public-programme-details-page
+    .rs-program-details
+    .rs-program-details-feature-icon
+    i {
+    color: var(--rs-theme-red);
+    font-size: 42px;
+    line-height: 1;
+}
+
+body.public-template-active
+    .public-programme-details-page
+    .rs-program-details
+    .rs-program-details-feature-item-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+body.public-template-active
+    .public-programme-details-page
+    .rs-program-details
+    .rs-program-details-feature-item {
+    min-width: 0;
+}
+
+body.public-template-active
+    .public-programme-details-page
+    .rs-program-details
+    .rs-program-details-feature-content {
+    min-width: 0;
+}
+
+body.public-template-active
+    .public-programme-details-page
+    .rs-program-details
+    .rs-program-details-feature-title {
+    color: var(--rs-title-primary);
+    font-size: 20px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+body.public-template-active
+    .public-programme-details-page
+    .rs-program-details
+    .rs-program-details-feature-desc {
+    color: var(--rs-text-primary);
+    font-weight: 500;
+    line-height: 1.55;
+    margin: 0;
+    overflow-wrap: normal;
+    word-break: normal;
+}
+
+body.public-template-active
+    .public-programme-details-page
+    .rs-program-details
+    .rs-program-details-feature-content
+    a {
+    color: inherit;
+}
+
+body.public-template-active
+    .public-programme-details-page
+    .rs-program-details
+    .rs-program-details-feature-content
+    a:hover,
+body.public-template-active
+    .public-programme-details-page
+    .rs-program-details
+    .rs-program-details-about-list
+    li
+    span,
+body.public-template-active
+    .public-programme-details-page
+    .rs-program-details
+    .curriculum-title {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active
+    .public-programme-details-page
+    .rs-program-details
+    .rs-program-details-about-list
+    li::before {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active .public-programme-details-page .public-programme-about {
+    margin-top: 52px;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-about-panel {
+    padding: 32px;
+    border: 1px solid rgb(177 8 42 / 14%);
+    border-radius: 8px;
+    background: var(--rs-white);
+}
+
+body.public-template-active .public-programme-details-page .public-programme-about-panel-label {
+    display: inline-flex;
+    margin-bottom: 12px;
+    color: var(--rs-theme-red);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-about-panel h5 {
+    margin-bottom: 14px;
+    color: var(--rs-title-primary);
+}
+
+body.public-template-active .public-programme-details-page .public-programme-about-panel p {
+    margin-bottom: 22px;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-about-panel-list {
+    display: grid;
+    gap: 18px;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-about-panel-list div {
+    padding-top: 18px;
+    border-top: 1px solid var(--rs-border-primary);
+}
+
+body.public-template-active .public-programme-details-page .public-programme-about-panel-list span {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--rs-theme-red);
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-about-panel-list strong {
+    display: block;
+    color: var(--rs-title-primary);
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-stage-list {
+    display: grid;
+    gap: 22px;
+    margin-top: 34px;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-stage {
+    display: grid;
+    grid-template-columns: 18px minmax(0, 1fr);
+    gap: 20px;
+    padding: 28px 32px;
+    border: 1px solid var(--rs-border-primary);
+    border-radius: 8px;
+    background: var(--rs-white);
+}
+
+body.public-template-active .public-programme-details-page .public-programme-stage-marker {
+    width: 12px;
+    height: 12px;
+    margin-top: 13px;
+    border-radius: 50%;
+    background: var(--rs-theme-red);
+    box-shadow: 0 0 0 8px rgb(177 8 42 / 10%);
+}
+
+body.public-template-active .public-programme-details-page .public-programme-stage .section-title {
+    font-size: 30px;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-stage-meta {
+    display: inline-flex;
+    margin-top: 14px;
+    padding: 8px 14px;
+    border-left: 3px solid var(--rs-theme-red);
+    background: rgb(177 8 42 / 7%);
+    color: var(--rs-title-primary);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+body.public-template-active .public-programme-details-page .rs-scholarships-three .rs-scholarships-title {
+    color: var(--rs-theme-red);
+}
+
+body.public-template-active .public-programme-details-page .rs-scholarships-three .rs-scholarships-list::before {
+    background: var(--rs-theme-red);
+}
+
+body.public-template-active .public-programme-details-page .public-programme-admissions-card {
+    align-self: flex-start;
+    padding: 34px;
+    border: 1px solid rgb(177 8 42 / 14%);
+    border-radius: 8px;
+    background: var(--rs-white);
+}
+
+body.public-template-active .public-programme-details-page .public-programme-admissions-card p {
+    margin-bottom: 0;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-admissions-actions {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--rs-theme-red);
+    font-weight: 700;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-secondary-links {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    padding-top: 18px;
+    border-top: 1px solid var(--rs-border-primary);
+}
+
+body.public-template-active .public-programme-details-page .rs-btn.has-theme-red,
+body.public-template-active .public-programmes-page .rs-btn.has-theme-red {
+    background: var(--rs-theme-red);
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-programme-details-page .rs-btn.has-theme-red .btn-text-wrap span,
+body.public-template-active .public-programme-details-page .rs-btn.has-theme-red .icon-box,
+body.public-template-active .public-programmes-page .rs-btn.has-theme-red .btn-text-wrap span,
+body.public-template-active .public-programmes-page .rs-btn.has-theme-red .icon-box {
+    color: var(--rs-white);
+}
+
+body.public-template-active .public-programme-details-page .rs-btn.has-theme-red .icon-box svg path,
+body.public-template-active .public-programmes-page .rs-btn.has-theme-red .icon-box svg path {
+    fill: var(--rs-white);
+}
+
+body.public-template-active .public-programme-details-page .rs-btn.has-theme-red.hover-black:hover,
+body.public-template-active .public-programmes-page .rs-btn.has-theme-red.hover-black:hover {
+    background: var(--rs-black);
+}
+
+body.public-template-active .public-programme-details-page .public-programme-related {
+    margin-top: 60px;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-related .section-title {
+    font-size: 36px;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-related-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 26px;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-related-link {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+    padding: 22px;
+    border: 1px solid var(--rs-border-primary);
+    border-radius: 8px;
+    background: var(--rs-white);
+}
+
+body.public-template-active .public-programme-details-page .public-programme-related-link span {
+    color: var(--rs-title-primary);
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+body.public-template-active .public-programme-details-page .public-programme-related-link small {
+    color: var(--rs-theme-red);
+    font-weight: 700;
+}
+
+@media (max-width: 1199px) {
+    body.public-template-active
+        .public-programme-details-page
+        .rs-program-details
+        .rs-program-details-feature-item-wrapper {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    body.public-template-active .public-programme-details-page .public-programme-related-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    body.public-template-active
+        .public-programme-details-page
+        .rs-program-details
+        .rs-program-details-tab-wrapper
+        .nav-pills {
+        grid-template-columns: 1fr;
+    }
+
+    body.public-template-active
+        .public-programme-details-page
+        .rs-program-details
+        .rs-program-details-feature-item-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    body.public-template-active .public-programme-details-page .public-programme-stage {
+        grid-template-columns: 1fr;
+        padding: 24px;
+    }
+
+    body.public-template-active .public-programme-details-page .public-programme-stage .section-title {
+        font-size: 26px;
+    }
+
+    body.public-template-active .public-programme-details-page .public-programme-related-list {
+        grid-template-columns: 1fr;
+    }
+
+    body.public-template-active .public-programme-details-page .public-programme-admissions-card {
+        padding: 26px;
+    }
+}
+
 body.public-template-active .public-department-details-page .rs-program-details .has-theme-red,
 body.public-template-active .public-department-details-page .rs-program-details .text-red {
     color: var(--rs-theme-red);

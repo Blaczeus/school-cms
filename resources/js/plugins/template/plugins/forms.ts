@@ -71,13 +71,16 @@ declare global {
 }
 
 const namespace = '.schoolCmsTemplateForms';
+const vueOwnedSelectSelector = '.public-programme-filter-control';
 
 function initNiceSelect($: JQueryGlobal): Cleanup | undefined {
     if (!$.fn?.niceSelect) {
         return undefined;
     }
 
-    const selects = $('select');
+    $(vueOwnedSelectSelector).niceSelect?.('destroy');
+
+    const selects = $(`select:not(${vueOwnedSelectSelector})`);
 
     if (selects.length === 0) {
         return undefined;
